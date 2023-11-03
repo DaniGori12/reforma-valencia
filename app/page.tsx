@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { getData } from './services/fetchService';
+import { createClient } from "contentful";
 
 
 export default async function Home() {
