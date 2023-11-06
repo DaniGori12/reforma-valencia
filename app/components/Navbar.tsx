@@ -11,15 +11,15 @@ export default function Navbar() {
           <li className=' group relative dropdown'>
             <a>Tipos</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto'>
-            <ul className='bg-white text-black w-fit rounded p-3 absolute z-10'>
-              <li><Link href="/aticos">Áticos</Link></li>
-              <li><Link href="/banos">Baños</Link></li>
-              <li><Link href="/cocinas">Cocinas</Link></li>
-              <li><Link href="/edificios">Edificios</Link></li>
-              <li><Link href="/fachadas">Fachadas</Link></li>
-              <li><Link href="/locales">Locales</Link></li>
-              <li><Link href="/oficinas">Oficinas</Link></li>
-              <li><Link href="/terrazas">Terrazas</Link></li>
+            <ul className='bg-white text-black w-max  rounded p-3 absolute z-10'>
+              <li className='hover:bg-gray-100'><Link href="/aticos">Reformas de Áticos</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/banos">Reformas de Baños</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/cocinas">Reformas de Cocinas</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/edificios">Reformas de Edificios</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/fachadas">Reformas de Fachadas</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/locales">Reformas de Locales</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/oficinas">Reformas de Oficinas</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/terrazas">Reformas de Terrazas</Link></li>
 
             </ul>
             </div>
@@ -27,12 +27,12 @@ export default function Navbar() {
           <li className=' group  relative dropdown'>
             <a>Barrios</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
-            <ul className='bg-white text-black w-fit rounded  p-3'>
-              <li><Link href="/benimaclet">Benimaclet</Link></li>
-              <li><Link href="/campanar">Campanar</Link></li>
-              <li><Link href="/centro">Centro</Link></li>
-              <li><Link href="/patraix">Patraix</Link></li>
-              <li><Link href="/quatre">Quatre Carreres</Link></li>
+            <ul className='bg-white text-black w-max rounded  p-3'>
+              <li className='hover:bg-gray-100'><Link href="/benimaclet">Reformas en Benimaclet</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/campanar">Reformas en Campanar</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/centro">Reformas en el Centro</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/patraix">Reformas en Patraix</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/quatre">Reformas en Quatre Carreres</Link></li>
 
             </ul>
             </div>
@@ -40,12 +40,12 @@ export default function Navbar() {
           <li className=' group  relative dropdown'>
             <a>Municipios</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
-            <ul className='bg-white text-black w-fit rounded p-3'>
-              <li><Link href="/alboraya">Alboraya</Link></li>
-              <li><Link href="/burjassot">Burjassot</Link></li>
-              <li><Link href="/catarroja">Catarroja</Link></li>
-              <li><Link href="/paterna">Paterna</Link></li>
-              <li><Link href="/torrent">Torrent</Link></li>
+            <ul className='bg-white text-black w-max rounded p-3'>
+              <li className='hover:bg-gray-100'><Link href="/alboraya">Reformas en Alboraya</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/burjassot">Reformas en Burjassot</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/catarroja">Reformas en Catarroja</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/paterna">Reformas en Paterna</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/torrent">Reformas en Torrent</Link></li>
 
             </ul>
             </div>
