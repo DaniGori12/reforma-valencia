@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className='bg-blue-800 p-5 w-screen relative top-0 '>
+    <div className='bg-cyan-950 w-screen relative top-0 '>
       <nav >
-        <ul className='flex flex-row justify-center gap-20 mb-5 text-white'>
+        <ul className='flex flex-row justify-center gap-20 py-5 text-white'>
           <li><Link href="/"> Home</Link></li>
           <li className=' group relative dropdown'>
             <a>Tipos</a>
@@ -24,7 +24,7 @@ export default function Navbar() {
             </ul>
             </div>
           </li>
-          <li className=' group  relative dropdown'>
+          <li className='group relative dropdown'>
             <a>Barrios</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
             <ul className='bg-white text-black w-max rounded  p-3'>
@@ -37,7 +37,7 @@ export default function Navbar() {
             </ul>
             </div>
           </li>
-          <li className=' group  relative dropdown'>
+          <li className='group relative dropdown'>
             <a>Municipios</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
             <ul className='bg-white text-black w-max rounded p-3'>
@@ -52,7 +52,7 @@ export default function Navbar() {
           </li>
 
           <li><Link href="/blog">Blog</Link></li>
-        <p className='botonNav '>SOLICITA TU PRESUPUESTO GRATIS</p>
+        <button className='botonNav '>SOLICITA TU PRESUPUESTO GRATIS</button>
         </ul>
 
       </nav>

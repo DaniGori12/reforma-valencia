@@ -8,28 +8,28 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 20%;
-  justify-content:center;
-  line-height: 2.5; 
- 
+  justify-content: center;
+  line-height: 2.5;
+
 }
 
 .boton {
-background-color: #facc15;
-border-radius: 0.25rem;
-padding: 10px;
-width:fit-content;
-font-weight: bolder;
-color: black;
-   
+  background-color: #facc15;
+  border-radius: 0.25rem;
+  padding: 10px;
+  width: fit-content;
+  font-weight: bolder;
+  color: black;
+
 }
 
 .botonNav {
-background-color: #facc15;
-border-radius: 0.25rem;
-padding-left: 0.75rem;
-padding-right: 0.75rem;
-width:fit-content;
-color: black;
+  background-color: #facc15;
+  border-radius: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: fit-content;
+  color: black;
 }
 
 h1 {
@@ -38,6 +38,7 @@ h1 {
   font-weight: bold;
   display: flex;
   margin-bottom: 2px;
+  color: rgb(8 51 68)
 }
 
 h2 {
@@ -45,6 +46,7 @@ h2 {
   font-weight: bold;
   line-height: 36px;
   margin-bottom: 2px;
+  color: rgb(8 51 68)
 }
 
 h3 {
@@ -52,4 +54,14 @@ h3 {
   font-weight: bold;
   line-height: 35px;
   margin-bottom: 2px;
+  color: rgb(8 51 68)
+}
+
+hr {
+height: 3px;
+border: 3px;
+background-color: #facc15;
+margin-top: 2px;
+margin-bottom: 2px;
+width: 30%;
 }
