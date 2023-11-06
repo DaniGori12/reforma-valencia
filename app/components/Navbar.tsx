@@ -7,14 +7,19 @@ export default function Navbar() {
     <div className='bg-cyan-950 w-screen relative top-0 '>
       <nav >
         <ul className='flex flex-row justify-center gap-20 py-5 text-white'>
-          <li><Link href="/"> Home</Link></li>
+          <li><Link href="/">Home</Link></li>
           <li className=' group relative dropdown'>
+            <div className='flex gap-1'>
             <a>Tipos</a>
+           
+            </div>
+            
+
             <div className='group-hover:block dropdown-menu absolute hidden h-auto'>
             <ul className='bg-white text-black w-max  rounded p-3 absolute z-10'>
               <li className='hover:bg-gray-100'><Link href="/aticos">Reformas de Áticos</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/banos">Reformas de Baños</Link></li>
               <li className='hover:bg-gray-100'><Link href="/cocinas">Reformas de Cocinas</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/banos">Reformas de Baños</Link></li>
               <li className='hover:bg-gray-100'><Link href="/edificios">Reformas de Edificios</Link></li>
               <li className='hover:bg-gray-100'><Link href="/fachadas">Reformas de Fachadas</Link></li>
               <li className='hover:bg-gray-100'><Link href="/locales">Reformas de Locales</Link></li>
