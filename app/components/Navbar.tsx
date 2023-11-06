@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className='bg-cyan-950 w-screen relative top-0 '>
       <nav >
-        <ul className='flex flex-row justify-center gap-20 py-5 text-white'>
+        <ul className='flex flex-row justify-center gap-20 py-5 text-white max-md:block max-md:mx-5'>
           <li><Link href="/">Home</Link></li>
           <li className=' group relative dropdown'>
             <div className='flex gap-1'>
@@ -57,7 +57,7 @@ export default function Navbar() {
           </li>
 
           <li><Link href="/blog">Blog</Link></li>
-        <button className='botonNav '>SOLICITA TU PRESUPUESTO GRATIS</button>
+        <button className='botonNav max-lg:hidden'>SOLICITA TU PRESUPUESTO GRATIS</button>
         </ul>
 
       </nav>
