@@ -15,14 +15,14 @@ export default async function Edificios() {
         const {headerBody, headerMedia, body, body2, body3, gridText, } = singlePost.fields;
         return (
           <div key="asdf">
-            <div className='max-h-72 w-screen pb-10 overflow-hidden relative bg-black '>
+            <div className='max-h-72 w-screen pb-10 overflow-hidden relative '>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen '
               />
-              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold'>
-                <p className='text-lg'>Reformas de Edificios en Valencia </p>
-                <p className='text-xl mx-5'>{headerBody}</p>
-                <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
+                <p className='text-lg'> Reformas de Edificios en Valencia</p>
+                <p className='text-xl mx-5 max-sm:text-lg'>{headerBody}</p>
+                <button className='boton max-sm:hidden'>SOLICITA TU PRESUPUESTO GRATIS</button>
               </div>
             </div>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>

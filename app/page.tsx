@@ -20,7 +20,7 @@ export default async function Home() {
           buildingText6, buildingText7, buildingText8 } = singlePost.fields;
         return (
           <div key="asdf">
-            <div className='max-h-72 w-screen pb-10 overflow-hidden relative bg-black '>
+            <div className='max-h-72 w-screen pb-10 overflow-hidden relative '>
               <img
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen '
               />
