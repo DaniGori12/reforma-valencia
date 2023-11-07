@@ -251,10 +251,10 @@ export default async function Home() {
 
             <hr ></hr>
             <div className='flex gap-5 px-56 max-xl:px-5 max-lg:flex-col justify-center text-center'>
-              <a className='w-1/2 max-xl:px-5'>{documentToReactComponents(body3)}</a>
+              <a className=' max-xl:px-5'>{documentToReactComponents(body3)}</a>
               <Link href="/contacto">
                 <img
-                  src={'https://' + media.fields.file.url} alt="asdf" width="500" height="380"
+                  src={'https://' + media.fields.file.url} alt="asdf" width="400" height="380" className='w-screen'
                 />
               </Link>
 
