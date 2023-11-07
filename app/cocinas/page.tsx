@@ -6,6 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 export default async function Cocinas() {
 
   const landingTeam = await getData("homePage");
+  const landingTipos = await getData("tipos1");
 
   return (
     <main>
@@ -42,6 +43,44 @@ export default async function Cocinas() {
           </div>
 
 
+        )
+      })}
+      {landingTipos?.map((singlePost: any) => {
+        const {bodyCocina, bodyCocina2, bodyCocina3, body3, mediaGrid, mediaCocina, mediaCocina2, mediaCocina3, mediaCocina4, mediaCocina5, mediaCocina6, mediaCocina7
+        , mediaCocina8, mediaCocina9, titleCocina  } = singlePost.fields;
+        return (
+          <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+            <div className='grid grid-cols-3 gap-5'>
+            <img src={'https://' + mediaCocina.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaCocina2.fields.file.url} alt="asdf" width="300" height="380" />
+            <img src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img  src={'https://' + mediaCocina4.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaCocina5.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaCocina6.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaCocina7.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaCocina8.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaCocina9.fields.file.url} alt="asdf" width="300" height="380"/>
+            </div>
+            <p className='px-56 max-xl:px-5'>{bodyCocina}</p>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <div className='flex flex-col items-center gap-2 px-56 gap-10 max-xl:px-5'>{documentToReactComponents(bodyCocina2)}</div>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <h3 className='px-56 gap-10 max-xl:px-5'>{titleCocina}</h3>
+            <hr></hr>
+            <div className='flex gap-5 px-56 max-xl:px-5 max-lg:flex-col justify-center text-center'>
+              <a className=' max-xl:px-5 text-left'>{documentToReactComponents(body3)}</a>
+              <Link href="/contacto">
+                <img
+                  src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="400" height="380" className='w-screen'
+                />
+              </Link>
+
+            </div>
+
+              <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+              <a className=' flex flex-col gap-5 items-center text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyCocina3)}</a>
+
+          </div>
         )
       })}
 

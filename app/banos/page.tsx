@@ -6,6 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 export default async function Banos() {
 
   const landingTeam = await getData("homePage");
+  const landingTipos = await getData("tipos1");
 
   return (
     <main>
@@ -43,6 +44,44 @@ export default async function Banos() {
           </div>
 
 
+        )
+      })}
+      {landingTipos?.map((singlePost: any) => {
+        const {bodyCocina, bodyBanos2, bodyBanos3, body3, mediaGrid, mediaBanos, mediaBanos2, mediaBanos3, mediaBanos4, mediaBanos5, mediaBanos6, mediaBanos7
+        , mediaBanos8, mediaBanos9, titleBanos  } = singlePost.fields;
+        return (
+          <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+            <div className='grid grid-cols-3 gap-5'>
+            <img src={'https://' + mediaBanos.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaBanos2.fields.file.url} alt="asdf" width="300" height="380" />
+            <img src={'https://' + mediaBanos3.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img  src={'https://' + mediaBanos4.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaBanos5.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaBanos6.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaBanos7.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaBanos8.fields.file.url} alt="asdf" width="300" height="380"/>
+            <img src={'https://' + mediaBanos9.fields.file.url} alt="asdf" width="300" height="380"/>
+            </div>
+            <p className='px-56 max-xl:px-5'>{bodyCocina}</p>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <div className='flex flex-col items-center gap-2 px-56 gap-10 max-xl:px-5'>{documentToReactComponents(bodyBanos2)}</div>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <h3 className='px-56 gap-10 max-xl:px-5'>{titleBanos}</h3>
+            <hr></hr>
+            <div className='flex gap-5 px-56 max-xl:px-5 max-lg:flex-col justify-center text-center'>
+              <a className=' max-xl:px-5 text-left'>{documentToReactComponents(body3)}</a>
+              <Link href="/contacto">
+                <img
+                  src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="400" height="380" className='w-screen'
+                />
+              </Link>
+
+            </div>
+
+              <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+              <a className=' flex flex-col gap-5 items-center text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyBanos3)}</a>
+
+          </div>
         )
       })}
 
