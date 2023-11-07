@@ -1,7 +1,27 @@
 import React from 'react'
+import { getData } from '../services/fetchService';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-export default function Cookies() {
+export default async function Cookies() {
+  const landingTeam = await getData("blog");
   return (
-    <div>Cookies</div>
+    <main>
+      {landingTeam?.map((singlePost: any) => {
+        const { cookies } = singlePost.fields;
+        return (
+          <div key="cont">
+          <div key="cont" className='flex text-left mt-10'>
+             <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(cookies)}</a>
+
+          </div>
+          </div>
+        )})}
+        
+        </main>
+
+
+
+
+
   )
 }

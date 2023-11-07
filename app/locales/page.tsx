@@ -6,6 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 export default async function Locales() {
 
   const landingTeam = await getData("homePage");
+  const landingTipos = await getData("tipos1");
 
   return (
     <main>
@@ -38,10 +39,33 @@ export default async function Locales() {
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
             </div>
+          </div>
+        )
+      })}
+      {landingTipos?.map((singlePost: any) => {
+        const { bodyBanos, bodyLocales, bodyLocales2, titleLocales, body3, mediaGrid} = singlePost.fields;
+        return (
+          <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+            <p className='px-56 max-xl:px-5'>{bodyBanos}</p>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <div className='flex flex-col items-center gap-2 px-56 gap-10 max-xl:px-5'>{documentToReactComponents(bodyLocales)}</div>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <h3 className='px-56 gap-10 max-xl:px-5'>{titleLocales}</h3>
+            <hr></hr>
+            <div className='flex gap-5 px-56 max-xl:px-5 max-lg:flex-col justify-center text-center'>
+              <a className=' max-xl:px-5 text-left'>{documentToReactComponents(body3)}</a>
+              <Link href="/contacto">
+                <img
+                  src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="400" height="380" className='w-screen'
+                />
+              </Link>
+
+            </div>
+
+              <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+              <a className=' flex flex-col gap-5 items-center text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyLocales2)}</a>
 
           </div>
-
-
         )
       })}
 

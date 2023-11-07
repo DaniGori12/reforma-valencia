@@ -12,7 +12,9 @@ body {
   line-height: 2.5;
 
 }
-
+ul {
+  line-height: 3;
+}
 
 .boton {
   background-color: #facc15;
