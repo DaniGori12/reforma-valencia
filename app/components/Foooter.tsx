@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Foooter() {
   return (
-    <div className='grid grid-cols-3 bg-cyan-950 w-screen gap-5 text-white mt-10 pt-5 max-xl:grid-cols-1'>
+    <div className='grid grid-cols-3 bg-cyan-950 w-screen gap-5 text-white mt-10 pt-5 max-lg:grid-cols-1'>
         <div className='mx-44 max-sm:mx-5 w-max'>
             <h4 className='font-bold gap-1'>DATOS DE CONTACTO</h4>
             <div className='flex max-lg:block gap-1'>

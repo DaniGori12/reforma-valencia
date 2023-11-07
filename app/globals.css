@@ -13,6 +13,7 @@ body {
 
 }
 
+
 .boton {
   background-color: #facc15;
   border-radius: 0.25rem;
@@ -20,6 +21,15 @@ body {
   width: fit-content;
   font-weight: bolder;
   color: black;
+
+}
+.botonForm {
+  background-color: rgb(8 51 68);
+  padding: 10px;
+  width: fit-content;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+
 
 }
 
@@ -37,6 +47,7 @@ h1 {
   margin-top: 34px;
   font-weight: bold;
   display: flex;
+  margin-top: 2px;
   margin-bottom: 2px;
   color: rgb(8 51 68)
 }
@@ -46,6 +57,7 @@ h2 {
   font-weight: bold;
   line-height: 36px;
   margin-bottom: 2px;
+  margin-top: 2px;
   color: rgb(8 51 68)
 }
 
@@ -53,8 +65,9 @@ h3 {
   font-size: 28px;
   font-weight: bold;
   line-height: 35px;
+  margin-top: 2px;
   margin-bottom: 2px;
-  color: rgb(8 51 68)
+  color: rgb(8 51 68);
 }
 
 hr {
@@ -64,4 +77,5 @@ background-color: #facc15;
 margin-top: 2px;
 margin-bottom: 2px;
 width: 30%;
+
 }

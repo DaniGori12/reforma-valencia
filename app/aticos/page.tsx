@@ -30,7 +30,7 @@ export default async function Áticos() {
               <h3>Las opiniones de nuestros clientes de Reformas de Áticos en Valencia son tu mejor garantía</h3>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
-              <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-xl:px-5'>{documentToReactComponents(gridText)}</div>
+              <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden '>{documentToReactComponents(gridText)}</div>
               <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
               <h3 className='px-56 gap-10 max-xl:px-5'>Ahora, solicita tu presupuesto para tu reforma de ático en Valencia y sorpréndete con el precio</h3>
               <hr></hr>

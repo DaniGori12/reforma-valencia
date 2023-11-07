@@ -29,7 +29,7 @@ export default async function Cocinas() {
               <h3>Descubre tu nueva empresa de Reformas de Cocinas en Valencia, que sí cumple con lo que promete</h3>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
-              <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-xl:px-5'>{documentToReactComponents(gridText)}</div>
+              <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</div>
               <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
               <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas de cocinas en Valencia son tu mejor garantía</h3>
               <hr></hr>
