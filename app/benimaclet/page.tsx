@@ -149,7 +149,7 @@ export default async function Benimaclet() {
                 <a className='mx-5'>{documentToReactComponents(bodyGrid)}</a>
                 <img src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="600" height="480" />
               </div>
-              <a className=' px-56 gap-10 max-xl:px-5 flex flex-col centrar text-left'>{documentToReactComponents(bodyBenimaclet)}</a>
+              <a className=' px-56 gap-5 max-xl:px-5 flex flex-col centrar text-left'>{documentToReactComponents(bodyBenimaclet)}</a>
 
             </div>
 

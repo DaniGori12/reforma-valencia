@@ -158,7 +158,7 @@ export default async function Campanar() {
         return (
           <main key="cam">
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
-            <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
+            <a className=' px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
             <Boton></Boton>
             <h3 className='px-56  max-xl:px-5'>{title}</h3>
             <hr ></hr>
@@ -166,7 +166,7 @@ export default async function Campanar() {
             <a className='mx-5'>{documentToReactComponents(bodyGrid)}</a>
             <img src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="600" height="480"/>
             </div>
-            <a className=' px-56 gap-10 max-xl:px-5 flex flex-col items-center text-left'>{documentToReactComponents(bodyCampanar)}</a>
+            <a className=' px-56 gap-10 max-xl:px-5 flex flex-col centrar  text-left'>{documentToReactComponents(bodyCampanar)}</a>
 
             </div>
 
