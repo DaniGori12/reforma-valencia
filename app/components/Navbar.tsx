@@ -57,7 +57,7 @@ export default function Navbar() {
           </li>
 
           <li><Link href="/blog">Blog</Link></li>
-        <button className='botonNav max-lg:hidden'>SOLICITA TU PRESUPUESTO GRATIS</button>
+        <button className='botonNav max-lg:hidden'><a href="/#presupuesto">SOLICITA TU PRESUPUESTO GRATIS</a></button>
         </ul>
 
       </nav>

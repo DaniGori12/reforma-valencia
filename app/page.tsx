@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import { getData } from './services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Boton from './components/Boton';
+import BotonTitle from './components/BotonTitle';
 
 export default async function Home() {
 
@@ -27,7 +29,7 @@ export default async function Home() {
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
                 <p className='text-lg '> {headerTitle}</p>
                 <p className='text-xl mx-5 max-sm:text-lg'>{headerBody}</p>
-                <button className='boton max-sm:hidden shadow-lg'>SOLICITA TU PRESUPUESTO GRATIS</button>
+               <BotonTitle></BotonTitle>
               </div>
             </div>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
@@ -35,7 +37,7 @@ export default async function Home() {
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
               <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</div>
-              <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+              <Boton></Boton>
               <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Valencia son tu mejor garantía</h3>
               <hr></hr>
               {body2}
@@ -73,7 +75,7 @@ export default async function Home() {
                 />
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>
-              <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+             <Boton></Boton>
               <h2>{title2}</h2>
               <hr ></hr>
               <p className='px-56 gap-10 max-xl:px-5'>{body5}</p>
@@ -246,7 +248,7 @@ export default async function Home() {
 
             </div>
             <a className=' flex flex-col items-center px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body2)}</a>
-            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <Boton></Boton>
             <h3 className='px-56 max-xl:px-5'>{title}</h3>
 
             <hr ></hr>
@@ -259,11 +261,11 @@ export default async function Home() {
               </Link>
 
             </div>
-            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <Boton></Boton>
             <a className=' px-56 items-center max-xl:px-5 flex flex-col text-left gap-5 '>{documentToReactComponents(body4)}</a>
             <div className='grid grid-cols-2 text-left gap-4 max-xl:px-5 px-44 max-lg:grid-cols-1'>
 
-              <form className='flex flex-col gap-5 items-center'>
+              <form className='flex flex-col gap-5 items-center enlace ' id="presupuesto">
 
                 <label> <input type="text" name="name" placeholder="Nombre" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
                 <label> <input type="text" name="email" placeholder="Email" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
