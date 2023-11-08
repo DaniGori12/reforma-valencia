@@ -164,7 +164,7 @@ export default async function Quatre() {
             <a className='mx-5'>{documentToReactComponents(bodyGrid)}</a>
             <img src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="600" height="480"/>
             </div>
-            <a className=' px-56 gap-10 max-xl:px-5 flex flex-col items-center text-left'>{documentToReactComponents(bodyQuatre)}</a>
+            <a className=' px-56 gap-10 max-xl:px-5 flex flex-col centrar text-left'>{documentToReactComponents(bodyQuatre)}</a>
 
             </div>
 
