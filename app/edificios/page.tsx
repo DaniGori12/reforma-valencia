@@ -29,12 +29,12 @@ export default async function Edificios() {
               </div>
             </div>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
-              <h3>Descubre tu nueva empresa de Reformas de Edificios en Valencia, que sí cumple con lo que promete</h3>
+              <h1>Descubre tu nueva empresa de Reformas de Edificios en Valencia, que sí cumple con lo que promete</h1>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
               <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</div>
               <Boton></Boton>
-              <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas de edificios en Valencia son tu mejor garantía</h3>
+              <h2 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas de edificios en Valencia son tu mejor garantía</h2>
               <hr></hr>
               {body2}
               <p className='bg-cyan-800 text-white pt-6  w-1/2 h-24' >Esto debería de ser el carrusel</p>

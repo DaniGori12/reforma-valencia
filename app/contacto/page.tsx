@@ -12,7 +12,7 @@ export default async function Contacto() {
         const { contactoGrid, contactoGridMedia } = singlePost.fields;
         return (
           <div key="cont" className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5' >
-            <h2 className='mt-10 flex items-center'>Contacto</h2>
+            <h1 className='mt-10 flex items-center'>Contacto</h1>
             <div className='grid grid-cols-2 gap-5'>
             <a className=' max-xl:px-5'>{documentToReactComponents(contactoGrid)}</a>
             <img src={'https://' + contactoGridMedia.fields.file.url} alt="asdf" width="600" height="480"/>

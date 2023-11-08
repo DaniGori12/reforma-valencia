@@ -47,9 +47,14 @@ export default function Navbar() {
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
             <ul className='bg-white text-black w-max rounded p-3'>
               <li className='hover:bg-gray-100'><Link href="/alboraya">Reformas en Alboraya</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/aldaya">Reformas en Aldaya</Link></li>
               <li className='hover:bg-gray-100'><Link href="/burjassot">Reformas en Burjassot</Link></li>
               <li className='hover:bg-gray-100'><Link href="/catarroja">Reformas en Catarroja</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/chirivella">Reformas en Chirivella</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/manises">Reformas en Manises</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/mislata">Reformas en Mislata</Link></li>
               <li className='hover:bg-gray-100'><Link href="/paterna">Reformas en Paterna</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/sagunto">Reformas en Sagunto</Link></li>
               <li className='hover:bg-gray-100'><Link href="/torrent">Reformas en Torrent</Link></li>
 
             </ul>

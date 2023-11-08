@@ -1,17 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-import { getData } from '../services/fetchService';
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import BotonTitle from '../components/BotonTitle';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import React from 'react'
 import Boton from '../components/Boton';
+import Link from 'next/link';
+import BotonTitle from '../components/BotonTitle';
+import { getData } from '../services/fetchService';
 
-export default async function Alboraya() {
-
+export default async function Manises() {
   const landingTeam = await getData("homePage");
   const landingMunicipios = await getData("municipios");
 
   return (
+
     <main>
+
 
 
       {landingTeam?.map((singlePost: any) => {
@@ -25,18 +27,18 @@ export default async function Alboraya() {
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
-                <p className='text-lg'> Reformas integrales en Alboraya</p>
+                <p className='text-lg'> Reformas integrales en Manises</p>
                 <p className='text-xl mx-5 max-sm:text-lg'>{headerBody}</p>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
-              <h1>Descubre tu nueva empresa de Reformas en Alboraya, que sí cumple con lo que promete</h1>
+              <h1>Descubre tu nueva empresa de Reformas en Manises, que sí cumple con lo que promete</h1>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
               <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</div>
-             <Boton></Boton>
-              <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Alboraya son tu mejor garantía</h3>
+              <Boton></Boton>
+              <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Manises son tu mejor garantía</h3>
               <hr></hr>
               {body2}
               <p className='bg-cyan-800 text-white pt-6  w-1/2 h-24' >Esto debería de ser el carrusel</p>
@@ -74,14 +76,14 @@ export default async function Alboraya() {
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>
               <Boton></Boton>
-              <h2>Comienza eligiendo el tipo de Reforma que deseas en Alboraya</h2>
+              <h2>Comienza eligiendo el tipo de Reforma que deseas en Manises</h2>
               <hr ></hr>
             </div>
           </div>
         )
       })}
       {landingMunicipios?.map((singlePost: any) => {
-        const { body, body2, mediaCocina, mediaBano, cocinaAlboraya, banoAlboraya, title, gridMedia, gridBody, bodyAlboraya } = singlePost.fields;
+        const { body, body2, mediaCocina3, mediaBano3, cocinaManises, banoManises, title, gridMedia, gridBody, bodyManises } = singlePost.fields;
         return (
           <main key={"alb"}>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
@@ -90,18 +92,18 @@ export default async function Alboraya() {
                 <div className='flex flex-col border-2 border-gray'>
                   <Link href="/cocinas">
                     <img
-                      src={'https://' + mediaCocina.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                      src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
                     />
-                    <p>{cocinaAlboraya}</p>
+                    <p>{cocinaManises}</p>
                   </Link>
 
                 </div>
                 <div className='flex flex-col border-2 border-gray'>
                   <Link href="/banos">
                     <img
-                      src={'https://' + mediaBano.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                      src={'https://' + mediaBano3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
                     />
-                    <p>{banoAlboraya}</p>
+                    <p>{banoManises}</p>
                   </Link>
 
                 </div>
@@ -115,7 +117,7 @@ export default async function Alboraya() {
                 <img src={'https://' + gridMedia.fields.file.url} alt="asdf" width="600" height="480" />
               </div>
               <Boton></Boton>
-              <a className='mx-5 flex flex-col centrar text-left gap-5'>{documentToReactComponents(bodyAlboraya)}</a>
+              <a className='mx-5 flex flex-col centrar text-left gap-5'>{documentToReactComponents(bodyManises)}</a>
             </div>
           </main>
         )
