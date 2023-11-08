@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
@@ -85,16 +86,21 @@ export default async function Burjassot() {
             <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
           <div className='grid grid-cols-2 px-56 gap-10 max-xl:px-5 max-xl:grid-cols-1 gap-5'>
             <div className='flex flex-col border-2 border-gray'>
-            <img
-                  src={'https://' + mediaCocina2.fields.file.url} alt="asdf" width="300" height="280"
-                />
-                <p>{cocinaBurjassot}</p>
-            </div>
-            <div className='flex flex-col border-2 border-gray'>
-            <img
-                  src={'https://' + mediaBano2.fields.file.url} alt="asdf" width="300" height="280"
-                />
-                <p>{banoBurjassot}</p>
+            <Link href="/cocinas">
+                    <img
+                      src={'https://' + mediaCocina2.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    />
+                    <p>{cocinaBurjassot}</p>
+                  </Link>
+
+                </div>
+                <div className='flex flex-col border-2 border-gray'>
+                  <Link href="/banos">
+                    <img
+                      src={'https://' + mediaBano2.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    />
+                    <p>{banoBurjassot}</p>
+                  </Link>
             </div>
           </div>
           <a className=' px-56 gap-10 flex flex-col  items-center max-xl:px-5 '>{documentToReactComponents(body2)}</a>

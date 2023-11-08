@@ -81,7 +81,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/aticos">
                   <img
-                    src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText}</p>
                   </Link>
@@ -89,7 +89,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/banos">
                   <img
-                    src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText2}</p>
                   </Link>
@@ -97,7 +97,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/cocinas">
                   <img
-                    src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText3}</p>
                   </Link>
@@ -105,7 +105,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/edificios">
                   <img
-                    src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText4}</p>
                   </Link>
@@ -113,7 +113,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/fachadas">
                   <img
-                    src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText5}</p>
                   </Link>
@@ -121,7 +121,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/locales">
                   <img
-                    src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText6}</p>
                   </Link>
@@ -129,7 +129,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/oficinas">
                   <img
-                    src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText7}</p>
                   </Link>
@@ -137,7 +137,7 @@ export default async function Quatre() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/terrazas">
                   <img
-                    src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="600" height="380"
+                    src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
                   />
                   <p>{buildingText8}</p>
                   </Link>

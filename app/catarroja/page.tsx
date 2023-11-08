@@ -86,16 +86,21 @@ export default async function Catarroja() {
             <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
           <div className='grid grid-cols-2 px-56 gap-10 max-xl:px-5 max-xl:grid-cols-1 gap-5'>
             <div className='flex flex-col border-2 border-gray'>
-            <img
-                  src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="280"
-                />
-                <p>{cocinaCatarroja}</p>
-            </div>
-            <div className='flex flex-col border-2 border-gray'>
-            <img
-                  src={'https://' + mediaBano3.fields.file.url} alt="asdf" width="300" height="280"
-                />
-                <p>{banoCatarroja}</p>
+            <Link href="/cocinas">
+                    <img
+                      src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    />
+                    <p>{cocinaCatarroja}</p>
+                  </Link>
+
+                </div>
+                <div className='flex flex-col border-2 border-gray'>
+                  <Link href="/banos">
+                    <img
+                      src={'https://' + mediaBano3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    />
+                    <p>{banoCatarroja}</p>
+                  </Link>
             </div>
           </div>
           <a className=' px-56 gap-10 flex flex-col  items-center max-xl:px-5 '>{documentToReactComponents(body2)}</a>

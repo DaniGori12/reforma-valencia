@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Link from 'next/link';
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
@@ -79,23 +80,28 @@ export default async function Paterna() {
         )
       })}
       {landingMunicipios?.map((singlePost: any) => {
-        const {body, body2, mediaCocina3, mediaBano3, cocinaMunicipios, banoMunicipios, title, gridMedia, gridBody, bodyMunicipios} = singlePost.fields;
+        const {body, body2, mediaCocina4, mediaBano4, cocinaPaterna, banoPaterna, title, gridMedia, gridBody, bodyPaterna} = singlePost.fields;
         return (
           <main key={"alb"}>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
             <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
           <div className='grid grid-cols-2 px-56 gap-10 max-xl:px-5 max-xl:grid-cols-1 gap-5'>
             <div className='flex flex-col border-2 border-gray'>
-            <img
-                  src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="280"
-                />
-                <p>{cocinaMunicipios}</p>
-            </div>
-            <div className='flex flex-col border-2 border-gray'>
-            <img
-                  src={'https://' + mediaBano3.fields.file.url} alt="asdf" width="300" height="280"
-                />
-                <p>{banoMunicipios}</p>
+            <Link href="/cocinas">
+                    <img
+                      src={'https://' + mediaCocina4.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    />
+                    <p>{cocinaPaterna}</p>
+                  </Link>
+
+                </div>
+                <div className='flex flex-col border-2 border-gray'>
+                  <Link href="/banos">
+                    <img
+                      src={'https://' + mediaBano4.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    />
+                    <p>{banoPaterna}</p>
+                  </Link>
             </div>
           </div>
           <a className=' px-56 gap-10 flex flex-col  items-center max-xl:px-5 '>{documentToReactComponents(body2)}</a>
@@ -107,7 +113,7 @@ export default async function Paterna() {
                 <img src={'https://' + gridMedia.fields.file.url} alt="asdf" width="600" height="480" />
               </div>
           <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
-          <a className='mx-5 flex flex-col centrar text-left gap-5'>{documentToReactComponents(bodyMunicipios)}</a>
+          <a className='mx-5 flex flex-col centrar text-left gap-5'>{documentToReactComponents(bodyPaterna)}</a>
             </div>
           </main>
         )})}
