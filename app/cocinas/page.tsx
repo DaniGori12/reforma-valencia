@@ -18,7 +18,7 @@ export default async function Cocinas() {
           <div key="asdf">
             <div className='max-h-72 w-screen pb-10 overflow-hidden relative '>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm'
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
                 <p className='text-lg'> Reformas de Cocinas en Valencia</p>

@@ -6,6 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 export default async function Patraix() {
 
   const landingTeam = await getData("homePage");
+  const landingBarrios= await getData("barrios");
 
   return (
     <main>
@@ -21,7 +22,7 @@ export default async function Patraix() {
           <div key="asdf">
             <div className='max-h-72 w-screen pb-10 overflow-hidden relative '>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm'
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
                 <p className='text-lg'> Reformas integrales en Patraix</p>
@@ -150,6 +151,25 @@ export default async function Patraix() {
 
         )
       })}
+      {landingBarrios?.map((singlePost: any) => {
+        const {body, title, bodyGrid, mediaGrid, bodyPatraix } = singlePost.fields;
+        return (
+          <main key="cam">
+            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
+            <button className='boton'>SOLICITA TU PRESUPUESTO GRATIS</button>
+            <h3 className='px-56  max-xl:px-5'>{title}</h3>
+            <hr ></hr>
+            <div className='grid grid-cols-2 gap-5 px-44 max-xl:px-5 max-2xl:grid-cols-1'>
+            <a className='mx-5'>{documentToReactComponents(bodyGrid)}</a>
+            <img src={'https://' + mediaGrid.fields.file.url} alt="asdf" width="600" height="480"/>
+            </div>
+            <a className=' px-56 gap-10 max-xl:px-5 flex flex-col items-center text-left'>{documentToReactComponents(bodyPatraix)}</a>
+
+            </div>
+
+            </main>
+        )})}
 
 
 

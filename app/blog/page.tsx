@@ -10,7 +10,7 @@ export default async function Blog() {
         const { blogMedia, blogMedia2, blogMedia3, blogMedia4, blogMedia5, blogMedia6, blogMedia7, blogMedia8, blogMedia9,
           blogText, blogText2, blogText3, blogText4, blogText5, blogText6, blogText7, blogText8, blogText9 } = singlePost.fields;
         return (
-          <div key="asdf" className='grid grid-cols-3 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
+          <div key="asdf" className='grid grid-cols-3 max-xl:px-5 px-44 m-5 max-lg:grid-cols-2 max-sm:grid-cols-1'>
             <div className='p-2'>
               <img
                 src={'https://' + blogMedia.fields.file.url} alt="asdf" width="400" height="380"
