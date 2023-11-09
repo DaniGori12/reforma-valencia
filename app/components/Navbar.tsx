@@ -30,14 +30,19 @@ export default function Navbar() {
             </div>
           </li>
           <li className='group relative dropdown'>
-            <a>Barrios</a>
+            <a>Zonas</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
             <ul className='bg-white text-black w-max rounded  p-3'>
+              <li className='hover:bg-gray-100'><Link href="/algiros">Reformas en Algirós</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/benicalap">Reformas en Benicalap</Link></li>
               <li className='hover:bg-gray-100'><Link href="/benimaclet">Reformas en Benimaclet</Link></li>
               <li className='hover:bg-gray-100'><Link href="/campanar">Reformas en Campanar</Link></li>
               <li className='hover:bg-gray-100'><Link href="/centro">Reformas en el Centro</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/jesus">Reformas en Jesús</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/olivereta">Reformas en Olivereta</Link></li>
               <li className='hover:bg-gray-100'><Link href="/patraix">Reformas en Patraix</Link></li>
               <li className='hover:bg-gray-100'><Link href="/quatre">Reformas en Quatre Carreres</Link></li>
+              <li className='hover:bg-gray-100'><Link href="/rascanya">Reformas en Rascanya</Link></li>
 
             </ul>
             </div>
