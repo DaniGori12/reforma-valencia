@@ -27,8 +27,8 @@ export default async function Benicalap() {
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm'
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
-                <p className='text-lg'> Reformas integrales en Benicalap</p>
-                <p className='text-xl mx-5 max-sm:text-lg'>{headerBody}</p>
+                <p className='text-lg titulo'> Reformas integrales en Benicalap</p>
+                <p className='text-xl mx-5 max-sm:text-lg titulo'>{headerBody}</p>
                <BotonTitle></BotonTitle>
               </div>
             </div>
@@ -46,15 +46,15 @@ export default async function Benicalap() {
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
 
               <div className='grid grid-cols-3 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
-                <img src={'https://' + roomMedia.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia2.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia3.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia4.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia5.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia6.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia7.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia8.fields.file.url} alt="asdf" width="300" height="380" />
-                <img src={'https://' + roomMedia9.fields.file.url} alt="asdf" width="300" height="380" />
+                <img src={'https://' + roomMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-64'/>
+                <img src={'https://' + roomMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
+                <img src={'https://' + roomMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-64' />
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>
               <Boton></Boton>
@@ -65,7 +65,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/aticos">
                     <img
-                      src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50  h-44'
                     />
                     <p>{buildingText}</p>
                   </Link>
@@ -73,7 +73,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/banos">
                     <img
-                      src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText2}</p>
                   </Link>
@@ -81,7 +81,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/cocinas">
                     <img
-                      src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText3}</p>
                   </Link>
@@ -89,7 +89,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/edificios">
                     <img
-                      src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText4}</p>
                   </Link>
@@ -97,7 +97,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/fachadas">
                     <img
-                      src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText5}</p>
                   </Link>
@@ -105,7 +105,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/locales">
                     <img
-                      src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText6}</p>
                   </Link>
@@ -113,7 +113,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/oficinas">
                     <img
-                      src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText7}</p>
                   </Link>
@@ -121,7 +121,7 @@ export default async function Benicalap() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/terrazas">
                     <img
-                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50'
+                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText8}</p>
                   </Link>

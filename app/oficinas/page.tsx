@@ -23,8 +23,8 @@ export default async function Oficinas() {
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm'
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
-                <p className='text-lg'> Reformas de Oficinas en Valencia</p>
-                <p className='text-xl mx-5 max-sm:text-lg'>{headerBody}</p>
+                <p className='text-lg titulo'> Reformas de Oficinas en Valencia</p>
+                <p className='text-xl mx-5 max-sm:text-lg titulo'>{headerBody}</p>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
