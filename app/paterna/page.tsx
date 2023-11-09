@@ -91,7 +91,7 @@ export default async function Paterna() {
             <div className='flex flex-col border-2 border-gray'>
             <Link href="/cocinas">
                     <img
-                      src={'https://' + mediaCocina4.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                      src={'https://' + mediaCocina4.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50 h-56'
                     />
                     <p>{cocinaPaterna}</p>
                   </Link>
@@ -100,7 +100,7 @@ export default async function Paterna() {
                 <div className='flex flex-col border-2 border-gray'>
                   <Link href="/banos">
                     <img
-                      src={'https://' + mediaBano4.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                      src={'https://' + mediaBano4.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50 h-56'
                     />
                     <p>{banoPaterna}</p>
                   </Link>

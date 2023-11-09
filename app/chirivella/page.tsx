@@ -90,7 +90,7 @@ export default async function Chirivella() {
               <div className='flex flex-col border-2 border-gray'>
                 <Link href="/cocinas">
                   <img
-                    src={'https://' + mediaCocina2.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    src={'https://' + mediaCocina2.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50 h-56'
                   />
                   <p>{cocinaChirivella}</p>
                 </Link>
@@ -99,7 +99,7 @@ export default async function Chirivella() {
               <div className='flex flex-col border-2 border-gray'>
                 <Link href="/banos">
                   <img
-                    src={'https://' + mediaBano2.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                    src={'https://' + mediaBano2.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50 h-56'
                   />
                   <p>{banoChirivella}</p>
                 </Link>

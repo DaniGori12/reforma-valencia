@@ -53,16 +53,16 @@ export default async function Banos() {
         , mediaBanos8, mediaBanos9, titleBanos  } = singlePost.fields;
         return (
           <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
-            <div className='grid grid-cols-3 gap-5'>
-            <img src={'https://' + mediaBanos.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img src={'https://' + mediaBanos2.fields.file.url} alt="asdf" width="300" height="380" />
-            <img src={'https://' + mediaBanos3.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img  src={'https://' + mediaBanos4.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img src={'https://' + mediaBanos5.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img src={'https://' + mediaBanos6.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img src={'https://' + mediaBanos7.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img src={'https://' + mediaBanos8.fields.file.url} alt="asdf" width="300" height="380"/>
-            <img src={'https://' + mediaBanos9.fields.file.url} alt="asdf" width="300" height="380"/>
+            <div className='grid grid-cols-3 gap-5  max-lg:grid-cols-2 max-sm:grid-cols-1'>
+            <img src={'https://' + mediaBanos.fields.file.url} alt="asdf" width="300" height="380" className='h-56 '/>
+            <img src={'https://' + mediaBanos2.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img src={'https://' + mediaBanos3.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img  src={'https://' + mediaBanos4.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img src={'https://' + mediaBanos5.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img src={'https://' + mediaBanos6.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img src={'https://' + mediaBanos7.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img src={'https://' + mediaBanos8.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
+            <img src={'https://' + mediaBanos9.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
             </div>
             <p className='px-56 max-xl:px-5'>{bodyCocina}</p>
             <Boton></Boton>
@@ -81,7 +81,7 @@ export default async function Banos() {
             </div>
 
             <Boton></Boton>
-              <a className=' flex flex-col gap-5 items-center text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyBanos3)}</a>
+              <a className=' flex flex-col gap-5 centrar text-left  px-56 max-xl:px-5'>{documentToReactComponents(bodyBanos3)}</a>
 
           </div>
         )

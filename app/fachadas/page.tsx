@@ -68,7 +68,7 @@ export default async function Fachadas() {
             </div>
 
             <Boton></Boton>
-              <a className=' flex flex-col gap-5 items-center text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyFachadas2)}</a>
+              <a className=' flex flex-col gap-5 centrar text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyFachadas2)}</a>
 
           </div>
         )

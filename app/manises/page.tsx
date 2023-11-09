@@ -92,7 +92,7 @@ export default async function Manises() {
                 <div className='flex flex-col border-2 border-gray'>
                   <Link href="/cocinas">
                     <img
-                      src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                      src={'https://' + mediaCocina3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50 h-56'
                     />
                     <p>{cocinaManises}</p>
                   </Link>
@@ -101,7 +101,7 @@ export default async function Manises() {
                 <div className='flex flex-col border-2 border-gray'>
                   <Link href="/banos">
                     <img
-                      src={'https://' + mediaBano3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50'
+                      src={'https://' + mediaBano3.fields.file.url} alt="asdf" width="300" height="280" className='hover:opacity-50 h-56'
                     />
                     <p>{banoManises}</p>
                   </Link>

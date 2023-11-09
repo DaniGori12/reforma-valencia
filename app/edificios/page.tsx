@@ -66,7 +66,7 @@ export default async function Edificios() {
             </div>
 
             <Boton></Boton>
-              <a className=' flex flex-col gap-5 items-center text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyEdificios2)}</a>
+              <a className=' flex flex-col gap-5 centrar text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyEdificios2)}</a>
 
           </div>
         )
