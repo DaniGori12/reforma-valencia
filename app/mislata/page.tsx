@@ -5,6 +5,7 @@ import Boton from '../components/Boton';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Link from 'next/link';
 import BotonTitle from '../components/BotonTitle';
+import { Carrusel } from '../components/Carousel';
 
 export default async function Mislata() {
   const landingTeam = await getData("homePage");
@@ -40,7 +41,7 @@ export default async function Mislata() {
             <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Mislata son tu mejor garantía</h3>
             <hr></hr>
             {body2}
-            <p className='bg-cyan-800 text-white pt-6  w-1/2 h-24' >Esto debería de ser el carrusel</p>
+            <Carrusel></Carrusel>
 
             <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
 

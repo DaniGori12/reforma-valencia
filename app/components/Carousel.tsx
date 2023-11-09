@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import { Carousel } from "@material-tailwind/react";
+
 
 export function Carrusel() {
     return (
