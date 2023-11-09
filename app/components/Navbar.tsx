@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className='bg-cyan-950 w-screen relative top-0 '>
       <nav >
-        <ul className='flex flex-row justify-center gap-20 py-5 text-white max-md:block max-md:mx-5'>
+        <ul className='flex justify-center gap-20  max-sm:gap-0 py-5 text-white max-sm:flex-col max-md:mx-5'>
           <li><Link href="/">Home</Link></li>
           <li className=' group relative dropdown '>
             <div className='flex gap-1 '>
@@ -29,7 +29,7 @@ export default function Navbar() {
             </ul>
             </div>
           </li>
-          <li className='group relative dropdown'>
+          <li className='group2 relative dropdown'>
             <a>Zonas</a>
             <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
             <ul className='bg-white text-black w-max rounded  p-3'>

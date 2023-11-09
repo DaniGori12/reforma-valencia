@@ -6,6 +6,7 @@ import Boton from './components/Boton';
 import BotonTitle from './components/BotonTitle';
 import { Carrusel } from './components/Carousel';
 
+
 export default async function Home() {
 
   const landingTeam = await getData("homePage");
@@ -43,6 +44,7 @@ export default async function Home() {
               <hr></hr>
               {body2}
               <Carrusel></Carrusel>
+              
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
 
