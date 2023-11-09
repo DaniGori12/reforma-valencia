@@ -13,55 +13,55 @@ export default async function Blog() {
           <div key="asdf" className='grid grid-cols-3 max-xl:px-5 px-44 m-5 max-lg:grid-cols-2 max-sm:grid-cols-1'>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia2.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia2.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText2}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia3.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia3.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText3}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia4.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia4.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText4}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia5.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia5.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText5}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia6.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia6.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText6}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia7.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia7.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText7}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia8.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia8.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText8}</p>
             </div>
             <div className='p-2'>
               <img
-                src={'https://' + blogMedia9.fields.file.url} alt="asdf" width="400" height="380"
+                src={'https://' + blogMedia9.fields.file.url} alt="asdf" width="400" height="380" className='h-52'
               />
               <p>{blogText9}</p>
             </div>

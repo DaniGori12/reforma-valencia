@@ -8,7 +8,7 @@ export function Carrusel() {
   
 
             <div className="carousel w-1/2 max-lg:w-screen ">
-                <div id="slide1" className="carousel-item relative w-full h-96 max-sm:h-screen">
+                <div id="slide1" className="carousel-item relative w-full ">
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <div className="flex items-center">
@@ -17,6 +17,7 @@ export function Carrusel() {
                                     <div className="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center rounded-full uppercase text-lg font-bold mr-4">
                                         J
                                     </div>
+                                    
                                     <p className=" flex  font-bold">Juan Pérez</p>
                                 </div>
                                 <div className="text-yellow-500">★★★★★</div>
