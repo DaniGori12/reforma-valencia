@@ -4,7 +4,8 @@ import { getData } from '../services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import BotonTitle from '../components/BotonTitle';
 import Boton from '../components/Boton';
-import { Carrusel } from '../components/Carousel';
+import Carrusel from '../components/Carousel';
+import {slides} from '../services/slider'
 
 export default async function Cocinas() {
 
@@ -38,7 +39,7 @@ export default async function Cocinas() {
               <h2 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas de cocinas en Valencia son tu mejor garantía</h2>
               <hr></hr>
               {body2}
-              <Carrusel></Carrusel>
+              <Carrusel slides={slides} />
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
             </div>

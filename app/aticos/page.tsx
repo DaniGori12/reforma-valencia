@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import BotonTitle from '../components/BotonTitle';
 import Boton from '../components/Boton';
-import { Carrusel } from '../components/Carousel';
+import Carrusel from '../components/Carousel';
+import {slides} from '../services/slider'
 
 export default async function Áticos() {
 
@@ -39,7 +40,7 @@ export default async function Áticos() {
               <h3 className='px-56 gap-10 max-xl:px-5'>Ahora, solicita tu presupuesto para tu reforma de ático en Valencia y sorpréndete con el precio</h3>
               <hr></hr>
               {body2}
-              <Carrusel></Carrusel>
+              <Carrusel slides={slides} />
             </div>
           </div>
         )

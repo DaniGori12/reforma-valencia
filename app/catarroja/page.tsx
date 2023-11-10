@@ -4,7 +4,8 @@ import { getData } from '../services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import BotonTitle from '../components/BotonTitle';
 import Boton from '../components/Boton';
-import { Carrusel } from '../components/Carousel';
+import Carrusel from '../components/Carousel';
+import {slides} from '../services/slider'
 
 export default async function Catarroja() {
 

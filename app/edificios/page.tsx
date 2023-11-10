@@ -4,7 +4,9 @@ import { getData } from '../services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Boton from '../components/Boton';
 import BotonTitle from '../components/BotonTitle';
-import { Carrusel } from '../components/Carousel';
+import Carrusel from '../components/Carousel';
+import {slides} from '../services/slider'
+
 
 export default async function Edificios() {
 
@@ -38,8 +40,7 @@ export default async function Edificios() {
               <h2 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas de edificios en Valencia son tu mejor garantía</h2>
               <hr></hr>
               {body2}
-              <Carrusel></Carrusel>
-
+              <Carrusel slides={slides} />
             
             </div>
 

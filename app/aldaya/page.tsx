@@ -5,8 +5,8 @@ import Boton from '../components/Boton';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { getData } from '../services/fetchService';
 import Link from 'next/link';
-import { Carrusel } from '../components/Carousel';
-
+import Carrusel from '../components/Carousel';
+import {slides} from '../services/slider'
 
 
 export default async function Aldaya() {
@@ -42,7 +42,7 @@ export default async function Aldaya() {
               <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Aldaya son tu mejor garantía</h3>
               <hr></hr>
               {body2}
-              <Carrusel></Carrusel>
+              <Carrusel slides={slides} />
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
 
