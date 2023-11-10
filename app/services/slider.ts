@@ -45,5 +45,23 @@ export const slides: SlidesInt[] = [
     body : "Copté por sus servicios de reforma integral para mi local comercial. La adaptabilidad a mis necesidades y el diseño personalizado hicieron la diferencia. Aunque hubo algunos contratiempos, el equipo los manejó con profesionalismo. Recomendado en Torrent.",
   
 },
+{
+    name : "Norberto Pascual Cortés",
+    title : "Estaría bien una opción ecológica",
+    estrellas : "★★",
+    estrellas2 : "★★★",
+    inicial : "NPC",
+    body : "Aunque la instalación y el resultado fue bueno pero ese precio podrían usar materiales ecológicos",
+  
+},
+{
+    name : "Grace Johnson",
+    title : "Fantastic Experience",
+    estrellas : "★★★★★",
+    estrellas2 : "",
+    inicial : "G",
+    body : "I recently used their terrace renovation services and it was outstanding. The personalized design perfectly reflected my tastes, and the execution was flawless. The highly skilled team and rigorous quality control make this company the top choice in Valencia.",
+  
+},
 
 ]
