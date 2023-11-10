@@ -17,7 +17,7 @@ export default async function Home() {
 
       {landingTeam?.map((singlePost: any) => {
         const { headerTitle, title2, headerBody, headerMedia, body, body2, body3, body4, body5, body6, gridText,
-          carrouselMedia, buildingMedia, buildingMedia2, buildingMedia3, buildingMedia4, buildingMedia5, buildingMedia6,
+         buildingMedia, buildingMedia2, buildingMedia3, buildingMedia4, buildingMedia5, buildingMedia6,
           roomMedia, roomMedia2, roomMedia3, roomMedia4, roomMedia5, roomMedia6, roomMedia7, roomMedia8, roomMedia9,
           buildingMedia7, buildingMedia8, buildingText, buildingText2, buildingText3, buildingText4, buildingText5,
           buildingText6, buildingText7, buildingText8 } = singlePost.fields;
@@ -28,13 +28,13 @@ export default async function Home() {
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10'
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
-                <p className='text-lg titulo'> {headerTitle}</p>
+                <p className='text-lg mx-5 flex titulo'> {headerTitle}</p>
                 <p className='text-xl mx-5 max-sm:text-lg titulo'>{headerBody}</p>
                <BotonTitle></BotonTitle>
               </div>
             </div>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
-              <h3>Descubre tu nueva empresa de Reformas en Valencia, que sí cumple con lo que promete</h3>
+              <h1>Descubre tu nueva empresa de Reformas en Valencia</h1>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
               <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</div>
