@@ -11,17 +11,19 @@ export default function Burguer() {
     
   return (
     <div>
-<nav className='fixed flex z-10 left-0'>
+     <div className='bg-cyan-950 w-screen h-12 z-10 fixed left-0 top-0 xl:2xl:hidden md:hidden lg:hidden'></div>
+<nav className='fixed flex z-10 left-0 top-0'>
 
         {!openMenu ? 
-        <div className='bg-cyan-950 w-32 z-100 top-0 left-0 pl-5 rounded-xl xl:2xl:hidden md:hidden lg:hidden m-2'>
+        <div className='bg-cyan-950 w-32 z-100 top-0 left-0 pl-5 rounded-xl xl:2xl:hidden md:hidden lg:hidden'>
     <div className=''>
     <nav className='bg-cyan-950 text-white rounded-xl'>
       <ul className=' text-white flex-col text-left'>   
-      <button onClick={toggleMenu} className='m-auto bg-cyan-950 text-white flex justify-right ' >
-      <p className='text-red-400 text-right absolute ml-8'>X</p>
+
+      <button onClick={toggleMenu} className=' bg-cyan-950 text-white mt-1' >
+      <p className='text-red-400'>X</p>
       </button>
-      <div className='mt-2'>
+      <div>
 
         <li><Link href="/">Home</Link></li>
         <li className=' group  dropdown  z-10'>
@@ -86,7 +88,7 @@ export default function Burguer() {
   </div>
  </div>
   : 
-  <button onClick={toggleMenu} className='m-auto bg-cyan-950 w-20 justify-center flex text-center text-white mt-2 ml-1 p-1  top-0 left-0 z-10 rounded-xl xl:2xl:hidden lg:hidden md:hidden m-2' >
+  <button onClick={toggleMenu} className='m-auto bg-cyan-950 w-10 justify-center flex text-center text-white mt-2 ml-1 p-1  top-0 left-0 z-10 rounded-xl xl:2xl:hidden lg:hidden md:hidden m-2' >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>
