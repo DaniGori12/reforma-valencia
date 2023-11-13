@@ -12,7 +12,7 @@ export default async function Áticos() {
 
   const landingTeam = await getData("homePage");
   const landingTipos = await getData("tipos1");
-
+  
   return (
     <main>
 

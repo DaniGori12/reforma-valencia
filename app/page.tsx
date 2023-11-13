@@ -1,10 +1,12 @@
+
 import Link from 'next/link';
 import { getData } from './services/fetchService';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Boton from './components/Boton';
 import BotonTitle from './components/BotonTitle';
 import Carrusel from './components/Carousel';
-import {slides} from './services/slider'
+import { slides } from './services/slider'
+import Form from './components/Form';
 
 
 export default async function Home() {
@@ -17,20 +19,20 @@ export default async function Home() {
 
       {landingTeam?.map((singlePost: any) => {
         const { headerTitle, title2, headerBody, headerMedia, body, body2, body3, body4, body5, body6, gridText,
-         buildingMedia, buildingMedia2, buildingMedia3, buildingMedia4, buildingMedia5, buildingMedia6,
+          buildingMedia, buildingMedia2, buildingMedia3, buildingMedia4, buildingMedia5, buildingMedia6,
           roomMedia, roomMedia2, roomMedia3, roomMedia4, roomMedia5, roomMedia6, roomMedia7, roomMedia8, roomMedia9,
           buildingMedia7, buildingMedia8, buildingText, buildingText2, buildingText3, buildingText4, buildingText5,
           buildingText6, buildingText7, buildingText8 } = singlePost.fields;
         return (
-          <div key="asdf">
-            <div className='max-h-72 w-screen pb-10 overflow-hidden relative '>
+          <div key="asdf" className='flex flex-col text-center max-sm:mt-0 px-56 gap-10 max-xl:px-5 items-center'>
+            <div className='max-h-72 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10'
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
-                <p className='text-lg mx-5 flex titulo'> {headerTitle}</p>
-                <p className='text-xl mx-5 max-sm:text-lg titulo'>{headerBody}</p>
-               <BotonTitle></BotonTitle>
+                <p className='max-md:text-base  mx-5 flex titulo'> {headerTitle}</p>
+                <p className='max-md:text-xs  mx-5 max-sm:text-lg titulo'>{headerBody}</p>
+                <BotonTitle></BotonTitle>
               </div>
             </div>
             <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
@@ -42,53 +44,53 @@ export default async function Home() {
               <h2 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Valencia son tu mejor garantía</h2>
               <hr></hr>
               {body2}
-             
-              <Carrusel slides={slides} />
-              
 
-              
+              <Carrusel slides={slides} />
+
+
+
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
 
               <div className='grid grid-cols-3 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
                 <img
-                  src={'https://' + roomMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-40'
                 />
                 <img
-                  src={'https://' + roomMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-64 '
+                  src={'https://' + roomMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-64 '
+                  src={'https://' + roomMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-64 '
+                  src={'https://' + roomMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-64 '
+                  src={'https://' + roomMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-40'
                 />
                 <img
-                  src={'https://' + roomMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-64 '
+                  src={'https://' + roomMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-64 '
+                  src={'https://' + roomMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-40'
                 />
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>
-             <Boton></Boton>
+              <Boton></Boton>
               <h2>{title2}</h2>
               <hr ></hr>
               <p className='px-56 gap-10 max-xl:px-5'>{body5}</p>
-              <div className='grid grid-cols-4 gap-5 max-xl:px-5 px-44 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1'>
+              <div className='grid grid-cols-4 gap-5 max-2xl:px-5 px-44 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:flex max-sm:items-center max-sm:flex-col '>
                 <div className='border-2 border-gray p-2'>
                   <Link href="/aticos">
                     <img
-                      src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText}</p>
                   </Link>
@@ -96,7 +98,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/banos">
                     <img
-                      src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'  
+                      src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText2}</p>
                   </Link>
@@ -104,7 +106,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/cocinas">
                     <img
-                      src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText3}</p>
                   </Link>
@@ -112,7 +114,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/edificios">
                     <img
-                      src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText4}</p>
                   </Link>
@@ -120,7 +122,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/fachadas">
                     <img
-                      src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText5}</p>
                   </Link>
@@ -128,7 +130,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/locales">
                     <img
-                      src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText6}</p>
                   </Link>
@@ -136,7 +138,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/oficinas">
                     <img
-                      src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText7}</p>
                   </Link>
@@ -144,7 +146,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/terrazas">
                     <img
-                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="600" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-44'
                     />
                     <p>{buildingText8}</p>
                   </Link>
@@ -160,23 +162,23 @@ export default async function Home() {
       })}
       {landingHome?.map((singlePost: any) => {
         const { barrioMedia, barrioMedia2, barrioMedia3, barrioMedia4, barrioMedia5, barrioMedia6, barrioMedia7, barrioMedia8,
-          barrioMedia9, barrioMedia10,barrioText, barrioText2, barrioText3,barrioText4, barrioText5, barrioText6,  barrioText7, barrioText8, 
+          barrioMedia9, barrioMedia10, barrioText, barrioText2, barrioText3, barrioText4, barrioText5, barrioText6, barrioText7, barrioText8,
           barrioText9, barrioText10, municipioMedia, municipioMedia2, municipioMedia3, municipioMedia4, municipioMedia5,
           municipioMedia6, municipioMedia7, municipioMedia8, municipioMedia9, municipioMedia10, media,
           municipioText, municipioText2, municipioText3, municipioText4, municipioText5, municipioText6, municipioText7, municipioText8,
           municipioText9, municipioText10, title, body, body2, body3, body4, body5 } = singlePost.fields;
         return (
           <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
-            <div className='grid grid-cols-5 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1'>
-          <div className='border-2 border-gray'>
-            <Link href="/algiros">
-              <img
-                src={'https://' + barrioMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
-              />
-              <p>{barrioText6}</p>
-            </Link>
-          </div>
-          <div className='border-2 border-gray'>
+            <div className='grid grid-cols-5 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:items-center'>
+              <div className='border-2 border-gray'>
+                <Link href="/algiros">
+                  <img
+                    src={'https://' + barrioMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                  />
+                  <p>{barrioText6}</p>
+                </Link>
+              </div>
+              <div className='border-2 border-gray'>
                 <Link href="/benicalap">
                   <img
                     src={'https://' + barrioMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
@@ -184,10 +186,10 @@ export default async function Home() {
                   <p>{barrioText7}</p>
                 </Link>
               </div>
-              <div className='border-2 border-gray p-2'>
+              <div className='border-2 border-gray'>
                 <Link href="/benimaclet">
                   <img
-                    src={'https://' + barrioMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50' 
+                    src={'https://' + barrioMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText}</p>
                 </Link>
@@ -360,15 +362,7 @@ export default async function Home() {
             <a className=' px-56 items-center max-xl:px-5 flex flex-col text-left gap-5 '>{documentToReactComponents(body4)}</a>
             <div className='grid grid-cols-2 text-left gap-4 max-xl:px-5 px-44 max-lg:grid-cols-1'>
 
-              <form className='flex flex-col gap-5 items-center enlace ' id="presupuesto">
-
-                <label> <input type="text" name="name" placeholder="Nombre" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label> <input type="text" name="email" placeholder="Email" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label> <input type="text" name="telefono" placeholder="Teléfono" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label>  <input type="text" name="cp" placeholder="Código postal" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label> <textarea placeholder="¿Qué tipo de reforma necesitas?" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /></label>
-                <button className='botonForm'>SOLICITA TU PRESUPUESTO GRATIS</button>
-              </form>
+              <Form></Form>
               <a>{documentToReactComponents(body5)}</a>
 
             </div>

@@ -2,6 +2,7 @@
 import React from 'react'
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Form from '../components/Form';
 
 
 export default async function Contacto() {
@@ -19,15 +20,7 @@ export default async function Contacto() {
             </div>
             
 
-              <form className='flex flex-col gap-5 items-center'>
-
-                <label> <input type="text" name="name" placeholder="Nombre" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label> <input type="text" name="email" placeholder="Email" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label> <input type="text" name="telefono" placeholder="Teléfono" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label>  <input type="text" name="cp" placeholder="Código postal" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto' /> </label>
-                <label> <textarea placeholder="¿Qué tipo de reforma necesitas?" className='border-2 border-gray pl-2 w-96 max-2xl:w-auto ' /></label>
-                <button className='botonForm w-96 max-2xl:w-auto'>SOLICITA TU PRESUPUESTO GRATIS</button>
-              </form>
+            <Form></Form>
               
 
             

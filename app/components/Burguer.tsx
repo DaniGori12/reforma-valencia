@@ -11,19 +11,23 @@ export default function Burguer() {
     
   return (
     <div>
+<nav className='fixed flex z-10 left-0'>
 
+        {!openMenu ? 
+        <div className='bg-cyan-950 w-32 z-100 top-0 left-0 pl-5 rounded-xl xl:2xl:hidden md:hidden lg:hidden m-2'>
+    <div className=''>
+    <nav className='bg-cyan-950 text-white rounded-xl'>
+      <ul className=' text-white flex-col text-left'>   
+      <button onClick={toggleMenu} className='m-auto bg-cyan-950 text-white flex justify-right ' >
+      <p className='text-red-400 text-right absolute ml-8'>X</p>
+      </button>
+      <div className='mt-2'>
 
-        {openMenu ? 
-        <div className='bg-cyan-950 w-44 absolute top-0 left-0 pl-5 rounded-xl'>
-      <button onClick={toggleMenu} className='m-auto bg-cyan-950 text-white ' >Menu desplegable</button>
-    <div >
-    <nav className='relative z-10 bg-cyan-950 text-white'>
-      <ul className='m:gap-0 text-white flex-col pl-5'>
         <li><Link href="/">Home</Link></li>
-        <li className=' group relative dropdown '>
+        <li className=' group  dropdown  z-10'>
           <a>Tipos</a>
-          <div className='group-hover:block dropdown-menu absolute hidden h-auto left-24'>
-          <ul className='bg-white text-black w-max  rounded p-3 absolute z-10'>
+          <div className='group-hover:block dropdown-menu pl-28  hidden h-auto z-100 '>
+          <ul className='bg-white text-black w-max rounded p-3 absolute z-10'>
             <li className='hover:bg-gray-100 '><Link href="/aticos">Reformas de Áticos</Link></li>
             <li className='hover:bg-gray-100'><Link href="/cocinas">Reformas de Cocinas</Link></li>
             <li className='hover:bg-gray-100'><Link href="/banos">Reformas de Baños</Link></li>
@@ -36,10 +40,11 @@ export default function Burguer() {
           </ul>
           </div>
         </li>
-        <li className='group relative dropdown'>
+      </div>
+        <li className='group dropdown'>
           <a>Zonas</a>
-          <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10 left-24'>
-          <ul className='bg-white text-black w-max rounded  p-3'>
+          <div className='group-hover:block dropdown-menu pl-28 hidden h-auto z-10'>
+          <ul className='bg-white text-black w-max rounded absolute p-3 z-100'>
             <li className='hover:bg-gray-100'><Link href="/algiros">Reformas en Algirós</Link></li>
             <li className='hover:bg-gray-100'><Link href="/benicalap">Reformas en Benicalap</Link></li>
             <li className='hover:bg-gray-100'><Link href="/benimaclet">Reformas en Benimaclet</Link></li>
@@ -54,10 +59,10 @@ export default function Burguer() {
           </ul>
           </div>
         </li>
-        <li className='group relative dropdown'>
+        <li className='group  dropdown'>
           <a>Municipios</a>
-          <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10 left-24'>
-          <ul className='bg-white text-black w-max rounded p-3'>
+          <div className='group-hover:block dropdown-menu  hidden h-auto flex pl-28 z-10 '>
+          <ul className='bg-white text-black w-max rounded absolute z-10 p-3'>
             <li className='hover:bg-gray-100'><Link href="/alboraya">Reformas en Alboraya</Link></li>
             <li className='hover:bg-gray-100'><Link href="/aldaya">Reformas en Aldaya</Link></li>
             <li className='hover:bg-gray-100'><Link href="/burjassot">Reformas en Burjassot</Link></li>
@@ -81,8 +86,14 @@ export default function Burguer() {
   </div>
  </div>
   : 
-  <button onClick={toggleMenu} className='m-auto bg-cyan-950 text-white p-1 absolute top-0 left-0 pl-5' >Menu desplegable</button>
+  <button onClick={toggleMenu} className='m-auto bg-cyan-950 w-20 justify-center flex text-center text-white mt-2 ml-1 p-1  top-0 left-0 z-10 rounded-xl xl:2xl:hidden lg:hidden md:hidden m-2' >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+  </button>
     }
+    </nav>
     </div>
   )
 }

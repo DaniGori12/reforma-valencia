@@ -8,7 +8,7 @@ body: any;
 }
 
 export const slides: SlidesInt[] = [
-{
+ {
     name : "Juan Pérez",
     title : "Experiencia Increíble",
     estrellas : "★★★★★",

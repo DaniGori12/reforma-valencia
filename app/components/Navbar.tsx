@@ -4,20 +4,20 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className='bg-cyan-950 w-screen relative top-0 '>
+    <div className='bg-cyan-950 w-screen sticky z-10 top-0  max-md:hidden'>
       <nav >
-        <ul className='flex justify-center gap-20 max-sm:gap-0 py-5 text-white max-sm:flex-col max-md:mx-5'>
+        <ul className='flex justify-center gap-20 py-5 text-white'>
           <li><Link href="/">Home</Link></li>
           <li className=' group relative dropdown '>
-            <div className='flex gap-1 '>
+            <div className='flex gap-1 cursor-pointer '>
             <a>Tipos</a>
            
             </div>
             
 
-            <div className='group-hover:block dropdown-menu absolute hidden h-auto '>
-            <ul className='bg-white text-black w-max  rounded p-3 absolute z-10'>
-              <li className='hover:bg-gray-100 '><Link href="/aticos">Reformas de Áticos</Link></li>
+            <div className='group-hover:block dropdown-menu absolute hidden h-auto'>
+            <ul className='bg-white text-black w-max  rounded p-3'>
+              <li className='hover:bg-gray-100'><Link href="/aticos">Reformas de Áticos</Link></li>
               <li className='hover:bg-gray-100'><Link href="/cocinas">Reformas de Cocinas</Link></li>
               <li className='hover:bg-gray-100'><Link href="/banos">Reformas de Baños</Link></li>
               <li className='hover:bg-gray-100'><Link href="/edificios">Reformas de Edificios</Link></li>
@@ -31,7 +31,7 @@ export default function Navbar() {
           </li>
           <li className='group relative dropdown'>
             <a>Zonas</a>
-            <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
+            <div className='group-hover:block dropdown-menu absolute hidden h-auto z-10'>
             <ul className='bg-white text-black w-max rounded  p-3'>
               <li className='hover:bg-gray-100'><Link href="/algiros">Reformas en Algirós</Link></li>
               <li className='hover:bg-gray-100'><Link href="/benicalap">Reformas en Benicalap</Link></li>
@@ -49,7 +49,7 @@ export default function Navbar() {
           </li>
           <li className='group relative dropdown'>
             <a>Municipios</a>
-            <div className='group-hover:block dropdown-menu absolute hidden h-auto absolute z-10'>
+            <div className='group-hover:block dropdown-menu absolute hidden h-auto z-10'>
             <ul className='bg-white text-black w-max rounded p-3'>
               <li className='hover:bg-gray-100'><Link href="/alboraya">Reformas en Alboraya</Link></li>
               <li className='hover:bg-gray-100'><Link href="/aldaya">Reformas en Aldaya</Link></li>
