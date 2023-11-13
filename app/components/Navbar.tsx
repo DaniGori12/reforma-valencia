@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className='bg-cyan-950 w-screen sticky z-10 top-0  max-md:hidden'>
+    <div className='bg-cyan-950 w-screen fixed z-10 top-0  max-md:hidden'>
       <nav >
         <ul className='flex justify-center gap-20 py-5 text-white'>
           <li><Link href="/">Home</Link></li>

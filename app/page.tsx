@@ -24,14 +24,14 @@ export default async function Home() {
           buildingMedia7, buildingMedia8, buildingText, buildingText2, buildingText3, buildingText4, buildingText5,
           buildingText6, buildingText7, buildingText8 } = singlePost.fields;
         return (
-          <div key="asdf" className='flex flex-col text-center max-sm:mt-0 px-56 gap-10 max-xl:px-5 items-center'>
-            <div className='max-h-72 w-screen pb-10 overflow-hidden relative'>
+          <div key="asdf" className='flex flex-col text-center max-sm:mt-0  gap-10  items-center'>
+            <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
               />
-              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20'>
-                <p className='max-md:text-base  mx-5 flex titulo'> {headerTitle}</p>
-                <p className='max-md:text-xs  mx-5 max-sm:text-lg titulo'>{headerBody}</p>
+              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-16'>
+                <h1 className='max-lg:text-base   flex titulo'> {headerTitle}</h1>
+                <p className='max-sm:text-sm   max-sm:text-lg titulo'>{headerBody}</p>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
