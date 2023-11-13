@@ -23,8 +23,8 @@ export default function RootLayout({
       <body className={inter.className}>
       <Navbar></Navbar>
       <Whats></Whats>
-      <Burguer></Burguer>
         {children}
+      <Burguer></Burguer>
         <Foooter></Foooter>
         </body>
     </html>

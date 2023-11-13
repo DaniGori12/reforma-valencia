@@ -20,7 +20,7 @@ export default function Whats() {
                 {
                     openMenu ?
             <button onClick={toggleMenu}>
-                        <div className='bg-green-400 rounded-full w-16 h-16 fixed right-2 bottom-9 max-lg:z-10'>
+                        <div className='bg-green-400 rounded-full w-16 h-16 fixed right-2 bottom-8 '>
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                 alt="asdf"
@@ -31,9 +31,9 @@ export default function Whats() {
                         </div>
                                 </button>
                         :
-                        <div className='fixed right-2 bottom-9 z-10'>
-                            <div className='mb-2'>
-                            <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg'>
+                        <div className='fixed right-2 bottom-8'>
+                                <div className='mb-2'>
+                            <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg relative'>
 
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
@@ -59,7 +59,7 @@ export default function Whats() {
                             </div>
                             </div>
                             <button onClick={toggleMenu} className='float-right'>
-                            <div className='bg-green-400 rounded-full  w-16 h-16  flex'>
+                            <div className='bg-green-400 rounded-full  w-16 h-16'>
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                     alt="asdf"

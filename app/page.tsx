@@ -29,7 +29,7 @@ export default async function Home() {
               <img
                 src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
               />
-              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 text-white font-bold max-sm:top-10'>
+              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20'>
                 <p className='max-md:text-base  mx-5 flex titulo'> {headerTitle}</p>
                 <p className='max-md:text-xs  mx-5 max-sm:text-lg titulo'>{headerBody}</p>
                 <BotonTitle></BotonTitle>
