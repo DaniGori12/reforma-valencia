@@ -146,7 +146,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/terrazas">
                     <img
-                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-44'
+                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText8}</p>
                   </Link>
