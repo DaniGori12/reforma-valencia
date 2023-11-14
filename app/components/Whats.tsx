@@ -16,11 +16,12 @@ export default function Whats() {
     return (
 
 
-        <div className=" ">
+        <div className="h-0">
+            
                 {
                     openMenu ?
             <button onClick={toggleMenu}>
-                        <div className='bg-green-400 rounded-full w-16 h-16 fixed right-4 bottom-8 z-20'>
+                        <div className='bg-green-400 rounded-full w-16 h-16 fixed right-4 bottom-8 z-20 hover:bg-green-600 duration-500'>
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                 alt="asdf"
@@ -31,7 +32,7 @@ export default function Whats() {
                         </div>
                                 </button>
                         :
-                        <div className='fixed right-4 bottom-8 z-20'>
+                        <div className='fixed right-4 bottom-8 z-0'>
                                 <div className='mb-2'>
                             <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg relative'>
 
@@ -50,7 +51,7 @@ export default function Whats() {
                                 </div>
 
                             </div>
-                            <div className='w-64 p-2 border rounded-b-lg bg-white pb-5'>
+                            <div className='w-64 p-2 border rounded-b-lg bg-white pb-5 hover:bg-slate-100'>
                                 <p className='text-green-400 text-xs'>Online</p>
                                
                                 <Link href={"/contacto"}> <p className='font-bold underline'>Reformas Valencia</p></Link>
@@ -59,7 +60,7 @@ export default function Whats() {
                             </div>
                             </div>
                             <button onClick={toggleMenu} className='float-right'>
-                            <div className='bg-green-400 rounded-full  w-16 h-16'>
+                            <div className='bg-green-400 rounded-full  w-16 h-16 hover:bg-green-600 duration-500'>
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                     alt="asdf"

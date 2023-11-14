@@ -30,8 +30,8 @@ export default function RootLayout({
       <Navbar></Navbar>
       <Burguer></Burguer>
         {children}
-      <Whats></Whats> 
         <Foooter></Foooter>
+      <Whats></Whats> 
         </body>
     </html>
   )
