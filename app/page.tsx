@@ -26,13 +26,14 @@ export default async function Home() {
         return (
           <div key="asdf">
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
+              
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen  aspect-video -translate-y-80 '
+                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen h-screen -translate-y-80 '
               />
-              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
+              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1 text-center'>
                  
                 <h1 className='max-lg:text-base mt-5 flex titulo'> {headerTitle}</h1>
-                <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
+                <p className='max-sm:text-sm max-sm:text-lg titulo '>{headerBody}</p>
                 <BotonTitle></BotonTitle>
               
               

@@ -21,7 +21,7 @@ export default function Whats() {
                 {
                     openMenu ?
             <button onClick={toggleMenu}>
-                        <div className='flex items-center bg-green-400 rounded-full w-12 h-12 fixed right-4 bottom-8 z-20 hover:bg-green-600 duration-500 hover:scale-110 duration-500'>
+                        <div className='flex items-center bg-green-500 rounded-full w-12 h-12 fixed right-4 bottom-8 z-20  duration-500 hover:scale-110 duration-500'>
                             <img
                                 src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                 alt="asdf"
@@ -32,9 +32,9 @@ export default function Whats() {
                         </div>
                                 </button>
                         :
-                        <div className='fixed right-4 bottom-8 z-0 '>
+                        <div className='fixed right-4 bottom-8 z-10 '>
                                 <div className='mb-2'>
-                            <div className='bg-green-400 flex gap-2 w-64 p-2 rounded-t-lg relative'>
+                            <div className='bg-green-500 flex gap-2 w-64 p-2 rounded-t-lg relative '>
 
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
@@ -60,7 +60,7 @@ export default function Whats() {
                             </div>
                             </div>
                             <button onClick={toggleMenu} className='float-right hover:ease-in-out'>
-                            <div className='flex items-center bg-green-400 rounded-full  w-12 h-12 hover:bg-green-600 duration-500 hover:scale-110 duration-500'>
+                            <div className='flex items-center bg-green-600 rounded-full  w-12 h-12  duration-500 hover:scale-110 duration-500'>
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
                                     alt="asdf"
