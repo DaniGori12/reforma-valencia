@@ -28,7 +28,7 @@ export default async function Home() {
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen h-screen -translate-y-80 '
+                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen h-screen -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1 text-center'>
                  
