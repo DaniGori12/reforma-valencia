@@ -16,8 +16,8 @@ export default async function Contacto() {
       {landingTeam?.map((singlePost: any) => {
         const { contactoGrid, contactoGridMedia } = singlePost.fields;
         return (
-          <article key="cont" className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5' >
-            <h1 className='mt-10 flex items-center'>Contacto</h1>
+          <article key="cont" className='flex text-center flex-col items-center mt-14 px-56 gap-10 max-xl:px-5' >
+            <h1 className=' flex items-center'>Contacto</h1>
             <div className='grid grid-cols-2 gap-5'>
             <a className=' max-xl:px-5'>{documentToReactComponents(contactoGrid)}</a>
             <img src={'https://' + contactoGridMedia.fields.file.url} alt="asdf" width="600" height="480"/>
