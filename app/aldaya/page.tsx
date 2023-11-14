@@ -52,31 +52,31 @@ export default async function Aldaya() {
 
               <div className='grid grid-cols-3 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
                 <img
-                  src={'https://' + roomMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia2.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia3.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia4.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia5.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia6.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia7.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia8.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-64'
+                  src={'https://' + roomMedia9.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>

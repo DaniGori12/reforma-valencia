@@ -17,7 +17,6 @@ export default async function Home() {
 
   return (
     <main>
-
       {landingTeam?.map((singlePost: any) => {
         const { headerTitle, title2, headerBody, headerMedia, body, body2, body3, body4, body5, body6, gridText,
           buildingMedia, buildingMedia2, buildingMedia3, buildingMedia4, buildingMedia5, buildingMedia6,
@@ -25,13 +24,12 @@ export default async function Home() {
           buildingMedia7, buildingMedia8, buildingText, buildingText2, buildingText3, buildingText4, buildingText5,
           buildingText6, buildingText7, buildingText8 } = singlePost.fields;
         return (
-          <div key="asdf" className='flex flex-col text-center max-sm:mt-0  gap-10  items-center'>
+          <div key="asdf">
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen h-screen -translate-y-10 '
+                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen  aspect-video -translate-y-80 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
-                 
                  
                 <h1 className='max-lg:text-base mt-5 flex titulo'> {headerTitle}</h1>
                 <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
@@ -59,31 +57,31 @@ export default async function Home() {
 
               <div className='grid grid-cols-3 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
                 <img
-                  src={'https://' + roomMedia.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40'
+                  src={'https://' + roomMedia.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia2.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia2.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia3.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia3.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia4.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia4.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia5.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia5.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia6.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40'
+                  src={'https://' + roomMedia6.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia7.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia7.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia8.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia8.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2'
                 />
                 <img
-                  src={'https://' + roomMedia9.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40'
+                  src={'https://' + roomMedia9.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-64 hover:scale-125 hover:border-2 '
                 />
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>
@@ -95,7 +93,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/aticos">
                     <img
-                      src={'https://' + buildingMedia.fields.file.url} alt="Ático" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia.fields.file.url} alt="Ático" width="300" height="380" className='hover:opacity-50 h-40 '
                     />
                     <p>{buildingText}</p>
                   </Link>
@@ -172,8 +170,9 @@ export default async function Home() {
           municipioMedia6, municipioMedia7, municipioMedia8, municipioMedia9, municipioMedia10, media,
           municipioText, municipioText2, municipioText3, municipioText4, municipioText5, municipioText6, municipioText7, municipioText8,
           municipioText9, municipioText10, title, body, body2, body3, body4, body5 } = singlePost.fields;
-        return (
-          <article key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+          return (
+            <article key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+             
             <div className='grid grid-cols-5 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:items-center'>
               <div className='border-2 border-gray'>
                 <Link href="/algiros">

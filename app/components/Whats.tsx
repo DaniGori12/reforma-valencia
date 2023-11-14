@@ -59,7 +59,7 @@ export default function Whats() {
                               
                             </div>
                             </div>
-                            <button onClick={toggleMenu} className='float-right'>
+                            <button onClick={toggleMenu} className='float-right hover:ease-in-out'>
                             <div className='bg-green-400 rounded-full  w-16 h-16 hover:bg-green-600 duration-500'>
                                 <img
                                     src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"}
