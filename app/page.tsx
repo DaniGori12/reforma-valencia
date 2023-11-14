@@ -30,7 +30,7 @@ export default async function Home() {
               <img
                 src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen h-screen -translate-y-10 '
               />
-              <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1 text-center'>
+              <div className=' flex flex-col gap-5 items-center absolute inset-x-5 top-20 max-md:top-5 mx-1 text-center'>
                  
                 <h1 className='max-lg:text-base mt-5 flex titulo'> {headerTitle}</h1>
                 <p className='max-sm:text-sm max-sm:text-lg titulo '>{headerBody}</p>
