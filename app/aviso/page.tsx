@@ -13,7 +13,7 @@ export default async function Aviso() {
       {landingTeam?.map((singlePost: any) => {
         const {avisoLegal} = singlePost.fields;
         return (
-          <div key="cont" className='flex text-left mt-10'>
+          <div key="cont" className='flex text-left mt-24'>
              <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(avisoLegal)}</a>
 
           </div>

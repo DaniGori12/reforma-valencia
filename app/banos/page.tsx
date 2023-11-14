@@ -9,7 +9,7 @@ import {slides} from '../services/slider'
 
 export const metadata = {
   title: 'Reformas Baños Valencia',
-  description: 'Reformas de Baños en Valencia. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
+  description: 'Empresa de reformas de Baños en Valencia. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
 }
 
 export default async function Banos() {

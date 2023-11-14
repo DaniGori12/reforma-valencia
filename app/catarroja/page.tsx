@@ -8,7 +8,8 @@ import Carrusel from '../components/Carousel';
 import {slides} from '../services/slider'
 
 export const metadata = {
-  title: 'Reformas integrales Catarroja'
+  title: 'Reformas integrales Catarroja',
+  description: 'Empresa de reformas en Catarroja. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
 }
 
 export default async function Catarroja() {

@@ -14,7 +14,7 @@ export default async function Cookies() {
         const { cookies } = singlePost.fields;
         return (
           <article key="cont">
-          <div key="cont" className='flex text-left mt-10'>
+          <div key="cont" className='flex text-left mt-28'>
              <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(cookies)}</a>
 
           </div>
