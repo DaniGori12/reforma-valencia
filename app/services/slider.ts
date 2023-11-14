@@ -21,8 +21,8 @@ export const slides: SlidesInt[] = [
 {
     name : "María López",
     title : "Maravillosa Transformación",
-    estrellas : "★★★★",
-    estrellas2 : "★",
+    estrellas : "★★★★★",
+    estrellas2 : "",
     inicial : "M",
     body : "Contraté sus servicios para la reforma integral de mi oficina y fue una decisión acertada. El diseño de interiores y la atención personalizada hicieron que mi espacio de trabajo sea ahora funcional y estéticamente agradable. La calidad del trabajo es insuperable.",
     
@@ -61,6 +61,14 @@ export const slides: SlidesInt[] = [
     estrellas2 : "",
     inicial : "G",
     body : "I recently used their terrace renovation services and it was outstanding. The personalized design perfectly reflected my tastes, and the execution was flawless. The highly skilled team and rigorous quality control make this company the top choice in Valencia.",
+  
+},{
+    name : "Daniel Cortázar",
+    title : "Precios y resultados increíbles",
+    estrellas : "★★★★★",
+    estrellas2 : "",
+    inicial : "DC",
+    body : "Estuve escéptico debido a los bajos precios pero tras la reforma estoy encantado",
   
 },
 

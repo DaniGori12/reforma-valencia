@@ -12,6 +12,7 @@
     "@contentful/rich-text-react-renderer": "^15.19.0",
     "contentful": "^10.6.5",
     "next": "14.0.1",
+    "next-seo": "^6.4.0",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.4"

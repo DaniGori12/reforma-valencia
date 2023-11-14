@@ -7,6 +7,7 @@ import BotonTitle from './components/BotonTitle';
 import Carrusel from './components/Carousel';
 import { slides } from './services/slider'
 import Form from './components/Form';
+import { NextSeo } from 'next-seo';
 
 
 export default async function Home() {
@@ -27,15 +28,19 @@ export default async function Home() {
           <div key="asdf" className='flex flex-col text-center max-sm:mt-0  gap-10  items-center'>
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
+                src={'https://' + headerMedia.fields.file.url} alt="Torres de Serrano" width="600" height="380" className='w-screen h-screen -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
+                 
+                 
                 <h1 className='max-lg:text-base mt-5 flex titulo'> {headerTitle}</h1>
                 <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
                 <BotonTitle></BotonTitle>
+              
+              
               </div>
             </div>
-            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <article className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
               <h2>Descubre tu nueva empresa de Reformas en Valencia</h2>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
@@ -54,31 +59,31 @@ export default async function Home() {
 
               <div className='grid grid-cols-3 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
                 <img
-                  src={'https://' + roomMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-40'
+                  src={'https://' + roomMedia.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40'
                 />
                 <img
-                  src={'https://' + roomMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia2.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia3.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia4.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia5.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-40'
+                  src={'https://' + roomMedia6.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40'
                 />
                 <img
-                  src={'https://' + roomMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia7.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-40 '
+                  src={'https://' + roomMedia8.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40 '
                 />
                 <img
-                  src={'https://' + roomMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-40'
+                  src={'https://' + roomMedia9.fields.file.url} alt="Habitación de una casa" width="300" height="380" className='h-40'
                 />
               </div>
               <p className='px-56 gap-10 max-xl:px-5'>{body4}</p>
@@ -90,7 +95,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/aticos">
                     <img
-                      src={'https://' + buildingMedia.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia.fields.file.url} alt="Ático" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText}</p>
                   </Link>
@@ -98,7 +103,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/banos">
                     <img
-                      src={'https://' + buildingMedia2.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia2.fields.file.url} alt="Baño" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText2}</p>
                   </Link>
@@ -106,7 +111,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/cocinas">
                     <img
-                      src={'https://' + buildingMedia3.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia3.fields.file.url} alt="Cocina" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText3}</p>
                   </Link>
@@ -114,7 +119,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/edificios">
                     <img
-                      src={'https://' + buildingMedia4.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia4.fields.file.url} alt="Edificio" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText4}</p>
                   </Link>
@@ -122,7 +127,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/fachadas">
                     <img
-                      src={'https://' + buildingMedia5.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia5.fields.file.url} alt="Fachada" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText5}</p>
                   </Link>
@@ -130,7 +135,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/locales">
                     <img
-                      src={'https://' + buildingMedia6.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia6.fields.file.url} alt="Local" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText6}</p>
                   </Link>
@@ -138,7 +143,7 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/oficinas">
                     <img
-                      src={'https://' + buildingMedia7.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia7.fields.file.url} alt="Oficina" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText7}</p>
                   </Link>
@@ -146,14 +151,14 @@ export default async function Home() {
                 <div className='border-2 border-gray p-2'>
                   <Link href="/terrazas">
                     <img
-                      src={'https://' + buildingMedia8.fields.file.url} alt="asdf" width="300" height="380" className='hover:opacity-50 h-40'
+                      src={'https://' + buildingMedia8.fields.file.url} alt="Terraza" width="300" height="380" className='hover:opacity-50 h-40'
                     />
                     <p>{buildingText8}</p>
                   </Link>
                 </div>
               </div>
               <a className=' px-56 gap-5 max-xl:px-5 items-center flex flex-col'>{documentToReactComponents(body6)}</a>
-            </div>
+            </article>
 
           </div>
 
@@ -168,12 +173,12 @@ export default async function Home() {
           municipioText, municipioText2, municipioText3, municipioText4, municipioText5, municipioText6, municipioText7, municipioText8,
           municipioText9, municipioText10, title, body, body2, body3, body4, body5 } = singlePost.fields;
         return (
-          <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+          <article key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
             <div className='grid grid-cols-5 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:flex max-sm:flex-col max-sm:items-center'>
               <div className='border-2 border-gray'>
                 <Link href="/algiros">
                   <img
-                    src={'https://' + barrioMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia6.fields.file.url} alt="Plaza Algirós" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText6}</p>
                 </Link>
@@ -181,7 +186,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/benicalap">
                   <img
-                    src={'https://' + barrioMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia7.fields.file.url} alt="Parque de Benicalap" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText7}</p>
                 </Link>
@@ -189,7 +194,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/benimaclet">
                   <img
-                    src={'https://' + barrioMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia.fields.file.url} alt="Plaza de Benimaclet" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText}</p>
                 </Link>
@@ -197,7 +202,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/campanar">
                   <img
-                    src={'https://' + barrioMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia2.fields.file.url} alt="Campanar" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText2}</p>
                 </Link>
@@ -205,7 +210,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/centro">
                   <img
-                    src={'https://' + barrioMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia3.fields.file.url} alt="Estación del Norte" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText3}</p>
                 </Link>
@@ -213,7 +218,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/jesus">
                   <img
-                    src={'https://' + barrioMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia8.fields.file.url} alt="Finca Roja" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText8}</p>
                 </Link>
@@ -222,7 +227,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/olivereta">
                   <img
-                    src={'https://' + barrioMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia9.fields.file.url} alt="Convento Santa Clara" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText9}</p>
                 </Link>
@@ -230,7 +235,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/patraix">
                   <img
-                    src={'https://' + barrioMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia4.fields.file.url} alt="Plaza de Patraix" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText4}</p>
                 </Link>
@@ -238,7 +243,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/quatre">
                   <img
-                    src={'https://' + barrioMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + barrioMedia5.fields.file.url} alt="Ciudad de las Artes y las Ciencias" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{barrioText5}</p>
                 </Link>
@@ -261,7 +266,7 @@ export default async function Home() {
               <div className='border-2 border-gray '>
                 <Link href="/alboraya">
                   <img
-                    src={'https://' + municipioMedia.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia.fields.file.url} alt="Iglesia Alboraya" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText}</p>
                 </Link>
@@ -269,7 +274,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/aldaya">
                   <img
-                    src={'https://' + municipioMedia6.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia6.fields.file.url} alt="Avenida Aldaya" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText6}</p>
                 </Link>
@@ -277,7 +282,7 @@ export default async function Home() {
               <div className='border-2 border-gray '>
                 <Link href="/burjassot">
                   <img
-                    src={'https://' + municipioMedia2.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia2.fields.file.url} alt="Plaza Burjassot" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText2}</p>
                 </Link>
@@ -285,7 +290,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/catarroja">
                   <img
-                    src={'https://' + municipioMedia3.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia3.fields.file.url} alt="Puerto Catarroja" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText3}</p>
                 </Link>
@@ -293,7 +298,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/chirivella">
                   <img
-                    src={'https://' + municipioMedia7.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia7.fields.file.url} alt="Mercado Chirivella" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText7}</p>
                 </Link>
@@ -302,7 +307,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/manises">
                   <img
-                    src={'https://' + municipioMedia8.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia8.fields.file.url} alt="Museo Manises" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText8}</p>
                 </Link>
@@ -310,7 +315,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/mislata">
                   <img
-                    src={'https://' + municipioMedia9.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia9.fields.file.url} alt="Edificio Mislata" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText9}</p>
                 </Link>
@@ -318,7 +323,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/paterna">
                   <img
-                    src={'https://' + municipioMedia4.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia4.fields.file.url} alt="Plaza Paterna" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText4}</p>
                 </Link>
@@ -326,7 +331,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/sagunto">
                   <img
-                    src={'https://' + municipioMedia10.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia10.fields.file.url} alt="Castillo Sagunto" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText10}</p>
                 </Link>
@@ -334,7 +339,7 @@ export default async function Home() {
               <div className='border-2 border-gray'>
                 <Link href="/torrent">
                   <img
-                    src={'https://' + municipioMedia5.fields.file.url} alt="asdf" width="300" height="380" className='h-40 hover:opacity-50'
+                    src={'https://' + municipioMedia5.fields.file.url} alt="Avenida Torrent" width="300" height="380" className='h-40 hover:opacity-50'
                   />
                   <p>{municipioText5}</p>
                 </Link>
@@ -366,7 +371,7 @@ export default async function Home() {
               <a>{documentToReactComponents(body5)}</a>
 
             </div>
-          </div>
+          </article>
         )
       })}
 

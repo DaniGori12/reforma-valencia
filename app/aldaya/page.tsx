@@ -8,6 +8,10 @@ import Link from 'next/link';
 import Carrusel from '../components/Carousel';
 import {slides} from '../services/slider'
 
+export const metadata = {
+  title: 'Reformas integrales Aldaya',
+  description: 'Empresa de reformas en Aldaya. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
+}
 
 export default async function Aldaya() {
   const landingTeam = await getData("homePage");
@@ -25,11 +29,11 @@ export default async function Aldaya() {
           <div key="asdf">
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen  -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
                 <h1 className='max-lg:text-base mt-5 flex titulo'> Reformas integrales en Aldaya</h1>
-                <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
+                <h3 className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</h3>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
@@ -37,7 +41,7 @@ export default async function Aldaya() {
               <h2>Descubre tu nueva empresa de Reformas en Aldaya, que sí cumple con lo que promete</h2>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
-              <div className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</div>
+              <article className='grid grid-cols-3 gap-2 px-56 gap-10 max-md:hidden'>{documentToReactComponents(gridText)}</article>
              <Boton></Boton>
               <h3 className='px-56 gap-10 max-xl:px-5'>Las opiniones de nuestros clientes de Reformas en Aldaya son tu mejor garantía</h3>
               <hr></hr>
@@ -87,7 +91,7 @@ export default async function Aldaya() {
         const { body, body2, mediaCocina, mediaBano, cocinaAldaya, banoAldaya, title, gridMedia, gridBody, bodyAldaya } = singlePost.fields;
         return (
           <main key={"alb"}>
-            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <article className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
               <div className='grid grid-cols-2 px-56 gap-10 max-xl:px-5 max-xl:grid-cols-1 gap-5'>
                 <div className='flex flex-col border-2 border-gray'>
@@ -119,7 +123,7 @@ export default async function Aldaya() {
               </div>
               <Boton></Boton>
               <a className='mx-5 flex flex-col centrar text-left gap-5'>{documentToReactComponents(bodyAldaya)}</a>
-            </div>
+            </article>
           </main>
         )
       })}

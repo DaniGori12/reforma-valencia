@@ -2,6 +2,10 @@ import React from 'react'
 import { getData } from '../services/fetchService';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
+export const metadata = {
+  title: 'Aviso legal Valencia Reformas'
+}
+
 export default async function Aviso() {
   const landingTeam = await getData("blog");
   return (

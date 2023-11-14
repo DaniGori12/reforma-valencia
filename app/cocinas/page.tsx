@@ -7,6 +7,11 @@ import Boton from '../components/Boton';
 import Carrusel from '../components/Carousel';
 import {slides} from '../services/slider'
 
+export const metadata = {
+  title: 'Reformas Cocinas Valencia',
+  description: 'Empresa de reformas de Cocinas en Valencia. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
+}
+
 export default async function Cocinas() {
 
   const landingTeam = await getData("homePage");
@@ -22,15 +27,15 @@ export default async function Cocinas() {
           <div key="asdf">
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
                 <h1 className='max-lg:text-base mt-5 flex titulo'> Reformas de Cocinas en Valencia</h1>
-                <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
+                <h3 className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</h3>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
-            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <article className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
               <h2>Descubre tu nueva empresa de Reformas de Cocinas en Valencia, que sí cumple con lo que promete</h2>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
@@ -42,7 +47,7 @@ export default async function Cocinas() {
               <Carrusel slides={slides} />
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
-            </div>
+            </article>
 
           </div>
 
@@ -53,7 +58,7 @@ export default async function Cocinas() {
         const {bodyCocina, bodyCocina2, bodyCocina3, body3, mediaGrid, mediaCocina, mediaCocina2, mediaCocina3, mediaCocina4, mediaCocina5, mediaCocina6, mediaCocina7
         , mediaCocina8, mediaCocina9, titleCocina  } = singlePost.fields;
         return (
-          <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+          <article key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
             <div className='grid grid-cols-3 gap-5 max-xl:grid-cols-2 max-sm:grid-cols-1'>
             <img src={'https://' + mediaCocina.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
             <img src={'https://' + mediaCocina2.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
@@ -84,7 +89,7 @@ export default async function Cocinas() {
             <Boton></Boton>
               <a className=' flex flex-col gap-5 centrar text-left px-56 max-xl:px-5'>{documentToReactComponents(bodyCocina3)}</a>
 
-          </div>
+          </article>
         )
       })}
 

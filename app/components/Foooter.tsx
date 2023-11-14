@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Foooter() {
   return (
-    <div className='grid grid-cols-3 bg-cyan-950 w-screen gap-5 text-white mt-10 pt-5 max-lg:grid-cols-1 max-xl:px-5 px-44 leading-6 text-sm pb-2'>
+    <footer className='grid grid-cols-3 bg-cyan-950 w-screen gap-5 text-white mt-10 pt-5 max-lg:grid-cols-1 max-xl:px-5 px-44 leading-6 text-sm pb-2'>
         <div className='mx-44 max-sm:mx-5 w-max'>
             <h4 className='text-white text-sm'>DATOS DE CONTACTO</h4>
             <div className='flex max-lg:block gap-1'>
@@ -40,6 +40,6 @@ export default function Foooter() {
             
         
 
-    </div>
+    </footer>
   )
 }

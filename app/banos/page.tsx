@@ -7,11 +7,17 @@ import Boton from '../components/Boton';
 import Carrusel from '../components/Carousel';
 import {slides} from '../services/slider'
 
+export const metadata = {
+  title: 'Reformas Baños Valencia',
+  description: 'Reformas de Baños en Valencia. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
+}
+
 export default async function Banos() {
 
   const landingTeam = await getData("homePage");
   const landingTipos = await getData("tipos1");
 
+  
   return (
     <main>
 
@@ -23,15 +29,15 @@ export default async function Banos() {
           <div key="asdf">
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen  -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
                 <h1 className='max-lg:text-base mt-5 flex titulo'> Reformas de Baños en Valencia</h1>
-                <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
+                <h3 className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</h3>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
-            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <article className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
               <h2>Descubre tu nueva empresa de Reformas de Baños en Valencia, que sí cumple con lo que promete</h2>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
@@ -43,7 +49,7 @@ export default async function Banos() {
               <Carrusel slides={slides} />
 
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
-            </div>
+            </article>
 
           </div>
 
@@ -54,7 +60,7 @@ export default async function Banos() {
         const {bodyCocina, bodyBanos2, bodyBanos3, body3, mediaGrid, mediaBanos, mediaBanos2, mediaBanos3, mediaBanos4, mediaBanos5, mediaBanos6, mediaBanos7
         , mediaBanos8, mediaBanos9, titleBanos  } = singlePost.fields;
         return (
-          <div key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
+          <article key="" className='flex flex-col text-center mt-20 px-56 gap-10 max-xl:px-5 items-center'>
             <div className='grid grid-cols-3 gap-5  max-lg:grid-cols-2 max-sm:grid-cols-1'>
             <img src={'https://' + mediaBanos.fields.file.url} alt="asdf" width="300" height="380" className='h-56 '/>
             <img src={'https://' + mediaBanos2.fields.file.url} alt="asdf" width="300" height="380" className='h-56'/>
@@ -85,7 +91,7 @@ export default async function Banos() {
             <Boton></Boton>
               <a className=' flex flex-col gap-5 centrar text-left  px-56 max-xl:px-5'>{documentToReactComponents(bodyBanos3)}</a>
 
-          </div>
+          </article>
         )
       })}
 

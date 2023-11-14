@@ -8,6 +8,11 @@ import { getData } from '../services/fetchService';
 import Carrusel from '../components/Carousel';
 import {slides} from '../services/slider'
 
+export const metadata = {
+  title: 'Reformas integrales Rascanya',
+  description: 'Empresa de reformas en Rascanya. Más de 10 años de experiencia con clientes felices. Cumplimos con el tiempo y el presupuesto'
+}
+
 export default async function Rascanya() {
   const landingTeam = await getData("homePage");
   const landingBarrios = await getData("barrios");
@@ -26,15 +31,15 @@ export default async function Rascanya() {
           <div key="asdf">
             <div className='max-h-96 w-screen pb-10 overflow-hidden relative'>
               <img
-                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen blur-sm -translate-y-10 '
+                src={'https://' + headerMedia.fields.file.url} alt="asdf" width="600" height="380" className='w-screen h-screen -translate-y-10 '
               />
               <div className=' flex flex-col gap-5 items-center absolute inset-x-0 top-20 mx-1'>
                 <h1 className='max-lg:text-base mt-5 flex titulo'> Reformas integrales en Rascanya</h1>
-                <p className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</p>
+                <h3 className='max-sm:text-sm max-sm:text-lg titulo'>{headerBody}</h3>
                 <BotonTitle></BotonTitle>
               </div>
             </div>
-            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <article className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
               <h2>Descubre tu nueva empresa de Reformas en Rascanya, que sí cumple con lo que promete</h2>
               <hr></hr>
               <a className='text-lg leading-10 px-56 max-xl:px-5'>{documentToReactComponents(body)}</a>
@@ -130,7 +135,7 @@ export default async function Rascanya() {
                 </div>
 
               </div>
-            </div>
+            </article>
 
           </div>
 
@@ -142,7 +147,7 @@ export default async function Rascanya() {
         const { body, title, bodyGrid, mediaGrid, bodyRascanya } = singlePost.fields;
         return (
           <main key="beni">
-            <div className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
+            <article className='flex text-center flex-col items-center mt-20 px-56 gap-10 max-xl:px-5'>
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body)}</a>
               <Boton></Boton>
               <h3 className='px-56  max-xl:px-5'>{title}</h3>
@@ -153,7 +158,7 @@ export default async function Rascanya() {
               </div>
               <a className=' px-56 gap-5 max-xl:px-5 flex flex-col centrar text-left'>{documentToReactComponents(bodyRascanya)}</a>
 
-            </div>
+            </article>
 
           </main>
         )
