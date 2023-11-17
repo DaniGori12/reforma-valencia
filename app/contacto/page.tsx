@@ -18,9 +18,9 @@ export default async function Contacto() {
         return (
           <article key="cont" className='flex text-center flex-col items-center mt-14 px-56 gap-10 max-xl:px-5' >
             <h1 className=' flex items-center'>Contacto</h1>
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='flex max-lg:flex-col gap-5'>
             <a className=' max-xl:px-5'>{documentToReactComponents(contactoGrid)}</a>
-            <img src={'https://' + contactoGridMedia.fields.file.url} alt="asdf" width="600" height="480"/>
+            <img src={'https://' + contactoGridMedia.fields.file.url} alt="asdf" width="400" height="480"/>
             </div>
             
 

@@ -14,8 +14,8 @@ export default function Carrusel({ slides }: any) {
     return (
         <div
             style={{
-                width: "75vw"
-                
+                width: "75vw",
+                height: "max-content"
             }}
             
         >
@@ -30,7 +30,7 @@ export default function Carrusel({ slides }: any) {
         >
             {slides.map((slide: SlidesInt) => (
                 <SwiperSlide key={slide.name}>
-                    <div className='border-2 p-5 rounded-xl relative z-0'>
+                    <div className='border-2 p-5 rounded-xl relative z-0 mb-12 h-auto'>
                         <div className="flex justify-center">
                             <div className="w-12 h-12  rounded-full bg-blue-500 text-white flex items-center justify-center rounded-full uppercase text-lg font-bold mr-4">
                                 {slide.inicial}
