@@ -16,7 +16,7 @@ export default function Burguer() {
 
         {!openMenu ? 
         <div className='bg-cyan-950 w-32 z-100 top-0 left-0 pl-5 rounded-xl xl:2xl:hidden md:hidden lg:hidden'>
-    <div className=''>
+    <div>
     <nav className='bg-cyan-950 text-white rounded-xl'>
       <ul className=' text-white flex-col text-left'>   
 
