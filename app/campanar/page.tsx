@@ -51,7 +51,7 @@ export default async function Campanar() {
               <Carrusel slides={slides} />
               <a className=' px-56 gap-10 max-xl:px-5'>{documentToReactComponents(body3)}</a>
               
-              <div className='grid grid-cols-3 gap-2 max-xl:px-5 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
+              <div className='grid grid-cols-3 gap-2 max-xl:px-0 px-44 max-lg:grid-cols-2 max-sm:grid-cols-1'>
               <div className='border border-2 overflow-hidden'>
 
 <img
